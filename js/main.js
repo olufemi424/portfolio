@@ -37,3 +37,21 @@ $("#scroll-top a").on("click", function(e) {
     );
   }
 });
+
+//SIDE NAV TOGGLE SPIN EFFECT
+// Select the DOM Item
+const menuBtn = document.querySelector(".menu-btn");
+// /set initial state of menu
+let showMenu = false;
+menuBtn.addEventListener("click", toggleMenu);
+function toggleMenu() {
+  if (!showMenu) {
+    menuBtn.classList.add("close");
+    //set menu state back to true
+    showMenu = true;
+  } else {
+    menuBtn.classList.remove("close");
+    //set menu state back to false
+    showMenu = false;
+  }
+}

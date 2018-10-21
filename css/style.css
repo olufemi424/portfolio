@@ -22,16 +22,6 @@
   z-index: 1000;
 }
 /********* TOGGLER BUTTON *********/
-#mobile_nav {
-  font-size: 36px;
-  position: relative;
-  color: #fff;
-  text-decoration: none;
-  opacity: 1000;
-}
-#mobile_nav:hover {
-  color: #434244;
-}
 
 /********* SIDE BAR NAV **************/
 /********* SIDE BAR NAV **************/
@@ -142,4 +132,35 @@ main .icons a:hover,
   #portfolio-drop-down {
     display: none !important;
   }
+}
+
+/* MENU BUTTON */
+.menu-btn {
+  position: absolute;
+  z-index: 3;
+  left: 35px;
+  top: 22px;
+  cursor: pointer;
+  opacity: 1000;
+  transition: all 0.5s ease-out;
+}
+.menu-btn .btn-line {
+  width: 36px;
+  height: 4px;
+  margin: 0 0 8px 0;
+  background: #fff;
+  transition: all 0.5s ease-out;
+}
+
+.menu-btn.close {
+  transform: rotate(180deg);
+}
+.menu-btn.close .btn-line:nth-child(1) {
+  transform: rotate(45deg) translate(13px, 10px);
+}
+.menu-btn.close .btn-line:nth-child(2) {
+  opacity: 0;
+}
+.menu-btn.close .btn-line:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -4px);
 }
