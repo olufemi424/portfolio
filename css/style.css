@@ -1,0 +1,145 @@
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+
+/* ******** MAIN PAGE ******** */
+#main-display {
+  position: relative;
+  display: block;
+  left: 0;
+  margin-left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#primary_nav {
+  top: 0px;
+  position: fixed;
+  display: block;
+  left: -170px;
+  width: 170px;
+  height: 100%;
+  background: #02030354;
+  border-right: 1px solid #fff;
+  z-index: 1000;
+}
+/********* TOGGLER BUTTON *********/
+#mobile_nav {
+  font-size: 36px;
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+  opacity: 1000;
+}
+#mobile_nav:hover {
+  color: #434244;
+}
+
+/********* SIDE BAR NAV **************/
+/********* SIDE BAR NAV **************/
+#primary_nav ul {
+  display: block;
+  margin-top: 80px;
+  padding-left: 5px;
+  list-style: none;
+  margin-top: 150px;
+}
+
+.active-link {
+  background: #fff;
+}
+
+#logo {
+  position: relative;
+  margin-left: 10px;
+  top: 40px;
+  left: 40px;
+  width: 90px;
+  font-size: 25px;
+}
+.menu li a {
+  text-decoration: none;
+}
+
+.menu li a i span {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana;
+}
+.menu > li {
+  padding: 25px;
+  box-shadow: 3px 0 rgba(255, 255, 255, 0.2) inset;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.04);
+  border-left: 1px solid rgba(255, 255, 255, 0.04);
+  --webkit-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  transition: all 0.8s;
+  font-size: 20px;
+  margin-bottom: 3px;
+  padding-left: 0.8em;
+}
+
+.menu li:hover {
+  opacity: 0.8;
+  cursor: pointer;
+  box-shadow: 15em 0 rgba(0, 0, 0, 0.2) inset;
+}
+
+/********* HOME PAGE *********/
+
+.heading-name {
+  position: relative;
+  text-align: center;
+  margin: 30% auto;
+}
+.heading-name h1 {
+  font-size: 6rem;
+}
+
+.heading-name .sm-heading {
+  margin: 35px 0;
+}
+main .icons {
+  margin: 35px 0;
+}
+main .icons a {
+  padding: 0.4rem;
+  color: #434244;
+}
+main .icons a:hover,
+#primary_nav ul li a .fab:hover {
+  color: #beee66 !important;
+  transition: all 0.5s ease-out !important;
+}
+
+/********* ABOUT PAGE *********/
+.about-header h1 {
+  font-size: 6rem;
+  margin-top: 20px;
+}
+
+#about img {
+  max-height: 250px;
+  border-radius: 40%;
+}
+
+/********** FOOTER **********/
+#main-footer {
+  text-align: center;
+  padding: 1rem;
+  background: #434244;
+  color: #fff;
+  height: 110px;
+}
+
+/********** SCROLL TOP **********/
+
+#scroll-top {
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  z-index: 1000;
+}
+/********* QUERIES *********/
+@media only screen and (max-width: 550px) {
+  #portfolio-drop-down {
+    display: none !important;
+  }
+}
