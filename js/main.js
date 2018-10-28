@@ -38,6 +38,13 @@ $("#scroll-top a").on("click", function(e) {
   }
 });
 
+var toggleStatus = 1;
+function toggleMenu() {
+  if (toggleStatus === 1) {
+    document.getElementById;
+  }
+}
+
 //SIDE NAV TOGGLE SPIN EFFECT
 // Select the DOM Item
 const menuBtn = document.querySelector(".menu-btn");
