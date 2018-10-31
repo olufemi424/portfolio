@@ -1,5 +1,18 @@
 @import url(https://fonts.googleapis.com/css?family=Poiret+One);
 
+p {
+  font-size: 1.3rem;
+}
+h2,
+h3 {
+  font-family: cursive;
+  font-size: 2.5rem;
+}
+
+h4 {
+  font-size: 1.8rem;
+}
+
 #whole-page {
   overflow: hidden;
   height: 100%;
@@ -28,6 +41,14 @@
   background: #02030354;
   border-right: 1px solid #fff;
   z-index: 1000;
+}
+
+.sticky-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10000;
 }
 
 /********** MENU BUTTON **********/
@@ -165,8 +186,8 @@ main .icons a:hover,
 
 #scroll-top {
   position: fixed;
-  bottom: 50px;
-  right: 20px;
+  bottom: 112px;
+  right: 10px;
   z-index: 1000;
 }
 
@@ -188,13 +209,5 @@ main .icons a:hover,
 }
 
 /* PORTFOLIO */
-main .resume-header {
-  margin-bottom: 90px;
-}
-img.image-port {
-  margin-top: -140px;
-}
 
-.image-port1 {
-  margin-top: -100px;
-}
+/* STICKY NAV */

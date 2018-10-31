@@ -15,6 +15,18 @@ $(document).ready(function() {
   });
 }); //end
 
+// sticky navbar
+$(document).ready(function() {
+  var $window = $(window);
+  var stickyNavContainer = $("#nav-display");
+  var nav = $("nav");
+  var navTop = nav.offset().top;
+
+  $window.scroll(function() {
+    nav.toggleClass("sticky-nav", $window.scrollTop() > navTop);
+  });
+});
+
 //Get the current year for the copyright
 $("#year").text(new Date().getFullYear());
 
