@@ -3,7 +3,8 @@
 // mobileNav = document.getElementById("mobile_nav");
 // primaryNav = document.getElementById("primary_nav");
 const menuBtn = document.querySelector(".menu-btn");
-let mainDisplay = document.getElementById("main-display");
+const mainDisplay = document.getElementById("main-display");
+const overlay = document.getElementById("overlay");
 
 // /set initial state of menu
 let showMenu = false;
@@ -22,33 +23,34 @@ function toggleMenu() {
 
 function open() {
   menuBtn.classList.add("close");
-  mainDisplay.classList.add("overlay");
+  overlay.classList.add("overlay");
   $("#primary_nav").animate({ left: "0px" }, 300);
   $("#main-display").animate({ left: "170px" }, 300);
+  $(".sticky-nav").animate({ left: "170px" }, 300);
   $("body").css("overflow-x", "hidden");
   $("#primary_nav").css("overflow-y", "hidden");
 }
 
 function close() {
   menuBtn.classList.remove("close");
-  mainDisplay.classList.remove("overlay");
+  overlay.classList.remove("overlay");
   $("#primary_nav").animate({ left: "-170px" }, 300);
   $("#main-display").animate({ left: "0px" }, 300);
   $("body").css("overflow-x", "hidden");
 }
 
 // sticky navbar
-$(document).ready(function() {
-  var $window = $(window);
-  var nav = $("nav");
-  var navTop = nav.offset().top;
+// $(document).ready(function() {
+//   var $window = $(window);
+//   var nav = $("nav");
+//   var navTop = nav.offset().top;
 
-  $window.scroll(function() {
-    nav.toggleClass("sticky-nav", $window.scrollTop() > navTop);
-    document.querySelector("#logo").style.marginTop = "50px";
-    document.querySelector(".menu-btn").style.marginTop = "-10px";
-  });
-});
+//   $window.scroll(function() {
+//     nav.toggleClass("sticky-nav", $window.scrollTop() > navTop);
+//     document.querySelector("#logo").style.marginTop = "50px";
+//     document.querySelector(".menu-btn").style.marginTop = "-10px";
+//   });
+// });
 
 //Get the current year for the copyright
 $("#year").text(new Date().getFullYear());
