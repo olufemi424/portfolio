@@ -25,14 +25,14 @@ h4 {
   overflow: hidden;
 }
 
-/* .sticky-nav {
+.sticky-nav {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 10;
   height: 64px;
-} */
+}
 
 .overlay {
   position: absolute;
