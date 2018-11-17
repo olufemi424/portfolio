@@ -168,6 +168,7 @@ nav ul {
     url(../img/background.jpeg);
   background-attachment: fixed;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #home .showcase {
