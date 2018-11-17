@@ -3,32 +3,42 @@
 p {
   font-size: 1.3rem;
 }
-h2,
+h2 {
+  font-size: 3rem;
+}
 h3 {
   font-family: cursive;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
 }
-
 h4 {
   font-size: 1.8rem;
 }
 
-#whole-page {
-  overflow: hidden;
-  height: 100%;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-}
 /* ******** MAIN PAGE ******** */
 #main-display {
   position: relative;
   display: block;
-  left: 0;
+  left: 0px;
   margin-left: 0;
   width: 100%;
   height: 100%;
+  overflow: hidden;
+}
+
+.sticky-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10000;
+  height: 64px;
+}
+
+.overlay {
+  position: fixed;
+  overflow: hidden;
+  background: #25252565;
+  z-index: 9999;
 }
 
 #primary_nav {
@@ -43,20 +53,13 @@ h4 {
   z-index: 1000;
 }
 
-.sticky-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 10000;
-}
-
 /********** MENU BUTTON **********/
 .menu-btn {
+  /* display: none; */
   position: absolute;
   z-index: 3;
   left: 35px;
-  top: 20px;
+  top: 27px;
   cursor: pointer;
   opacity: 1000;
   transition: all 0.5s ease-out;
@@ -108,7 +111,8 @@ h4 {
   text-decoration: none;
 }
 
-.menu li a i span {
+.menu li a i span,
+nav ul {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana;
 }
 .menu > li {
@@ -118,11 +122,11 @@ h4 {
   border-top: 1px solid rgba(255, 255, 255, 0.04);
   border-left: 1px solid rgba(255, 255, 255, 0.04);
   --webkit-transition: all 0.8s;
-  -o-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
   font-size: 20px;
   margin-bottom: 3px;
   padding-left: 0.8em;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
   -ms-transition: all 0.4s ease-in-out;
@@ -135,26 +139,55 @@ h4 {
   box-shadow: 9em 0 rgba(0, 0, 0, 0.2) inset;
 }
 
+/****** MAIN DISPLAY NAV *****/
+#main-display nav {
+  background-color: rgba(0, 0, 0, 0.233);
+  border-bottom: 1px #fff solid;
+  padding: 20px;
+}
+#main-display nav ul {
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+#main-display nav ul li {
+  margin-left: 10px;
+}
+
 /********* HOME PAGE *********/
 
-.heading-name {
+#home {
   position: relative;
   text-align: center;
-  margin-top: 20%;
+  height: 91vh;
+  border-bottom: #33333323 solid 1px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)),
+    url(../img/background.jpeg);
+  background-attachment: fixed;
+  background-size: cover;
 }
-.heading-name h1 {
+
+#home .showcase {
+  position: absolute;
+  margin-top: 15%;
+}
+
+#home .showcase h1 {
+  color: #beee66;
   font-size: 6rem;
 }
 
-.heading-name .sm-heading {
+#home .showcase .sm-heading {
   margin: 35px 0;
 }
 main .icons {
   margin: 35px 0;
 }
+
 main .icons a {
   padding: 0.4rem;
-  color: #434244;
+  color: #fff;
 }
 main .icons a:hover,
 #primary_nav ul li a .fab:hover {
@@ -163,8 +196,11 @@ main .icons a:hover,
 }
 
 /********* ABOUT PAGE *********/
+#about {
+  border-bottom: #33333323 solid 1px;
+}
 .about-header h1 {
-  font-size: 6rem;
+  font-size: 2rem;
   margin-top: 20px;
 }
 
@@ -172,15 +208,11 @@ main .icons a:hover,
   max-height: 250px;
   border-radius: 40%;
 }
+#works {
+  border-bottom: #33333323 solid 1px;
+}
 
 /********** FOOTER **********/
-#main-footer {
-  text-align: center;
-  padding: 1rem;
-  background: #434244;
-  color: #fff;
-  height: 110px;
-}
 
 /********** SCROLL TOP **********/
 
@@ -191,23 +223,56 @@ main .icons a:hover,
   z-index: 1000;
 }
 
-.badge {
-  font-weight: 300;
-  margin: 3px;
-}
-
 /********* QUERIES *********/
 @media only screen and (max-width: 576px) {
-  #portfolio-drop-down,
-  #resume--blog {
-    display: none !important;
+  #home h1 {
+    font-size: 5rem;
+  }
+  #home h2 {
+    font-size: 2rem;
   }
 
-  .heading-name h1 {
-    font-size: 5rem;
+  #about {
+    text-align: center;
+  }
+
+  #about h3.muted {
+    margin-top: 30px;
+  }
+
+  #about p.text-muted {
+    margin-top: 30px;
+  }
+
+  #works .pading-responsive {
+    padding-top: 40px;
+  }
+
+  footer {
+    padding: 20px 0 20px 0;
+    text-align: center;
   }
 }
 
-/* PORTFOLIO */
+@media (max-width: 991px) {
+  #main-display #nav-display ul {
+    display: none;
+  }
+  .navbar-brand {
+    margin-left: 45% !important;
+  }
+}
 
-/* STICKY NAV */
+@media (min-width: 992px) {
+  .menu-btn {
+    display: none;
+  }
+
+  #main-display #nav-display ul {
+    display: flex;
+  }
+
+  #home .showcase {
+    margin-left: 15%;
+  }
+}
