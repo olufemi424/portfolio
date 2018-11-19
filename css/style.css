@@ -222,6 +222,11 @@ main .icons a:hover,
   border-bottom: #33333323 solid 1px;
 }
 
+#works li {
+  line-height: 0.7;
+  border: none;
+}
+
 /********** FOOTER **********/
 
 /********** SCROLL TOP **********/
