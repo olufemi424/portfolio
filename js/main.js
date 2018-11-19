@@ -1,7 +1,7 @@
 //SIDE NAV TOGGLE SPIN EFFECT
 // Select the DOM Item
 // mobileNav = document.getElementById("mobile_nav");
-// primaryNav = document.getElementById("primary_nav");
+primaryNav = document.getElementById("primary_nav");
 const menuBtn = document.querySelector(".menu-btn");
 const mainDisplay = document.getElementById("main-display");
 const overlay = document.getElementById("overlay");
@@ -24,18 +24,15 @@ function toggleMenu() {
 function open() {
   menuBtn.classList.add("close");
   overlay.classList.add("overlay");
-  $("#primary_nav").animate({ left: "0px" }, 300);
-  $("#main-display").animate({ left: "170px" }, 300);
-  $("body").css("overflow-x", "hidden");
-  $("#primary_nav").css("overflow-y", "hidden");
+  primaryNav.style.left = "0px";
+  mainDisplay.style.left = "170px";
 }
 
 function close() {
   menuBtn.classList.remove("close");
   overlay.classList.remove("overlay");
-  $("#primary_nav").animate({ left: "-170px" }, 300);
-  $("#main-display").animate({ left: "0px" }, 300);
-  $("body").css("overflow-x", "hidden");
+  primaryNav.style.left = "-170px";
+  mainDisplay.style.left = "0px";
 }
 
 // sticky navbar
