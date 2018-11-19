@@ -146,10 +146,18 @@ nav ul {
 }
 
 /****** MAIN DISPLAY NAV *****/
+.bg-img {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)),
+    url(../img/background.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 #main-display nav {
-  border-bottom: 1px #fff solid;
+  border-bottom: 1px #ffffff8e solid;
   padding: 20px;
-  background-color: rgba(0, 0, 0, 0.87);
+  background-color: rgba(0, 0, 0, 0.151);
 }
 #main-display nav ul {
   text-transform: uppercase;
@@ -162,17 +170,11 @@ nav ul {
 }
 
 /********* HOME PAGE *********/
-
 #home {
   position: relative;
   text-align: center;
   height: 91vh;
   border-bottom: #33333323 solid 1px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)),
-    url(../img/background.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 #home .showcase {
