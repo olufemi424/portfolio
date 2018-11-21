@@ -227,6 +227,10 @@ main .icons a:hover,
   border: none;
 }
 
+form #alertSuccess,
+form #alertFail {
+  display: none;
+}
 /********** FOOTER **********/
 
 /********** SCROLL TOP **********/

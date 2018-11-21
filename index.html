@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css"
+    />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
@@ -138,7 +142,7 @@
                     </div>
         
                 </div>
-            </nav>
+            </div>
         </nav>
 
         <!-- BODY STARTS HERE -->
@@ -147,14 +151,14 @@
         <section id="home">
           <div class="container">
             <main class="showcase">
-              <h1>Olufemi <span class="text-light">Afolabi</span></h1>
+              <h1 class="animated fadeInDownBig">Olufemi <span class="text-light">Afolabi</span></h1>
               <h2 class="sm-heading text-light"><span
                 id="typewriter"
                 data-wait="3000"
               ></span>
               ...</h2>
 
-              <div class="icons">
+              <div class="icons animated bounceInLeft">
                 <a href="https://twitter.com/afofm" target="_blank"
                   ><i class="fab fa-twitter fa-2x"></i
                 ></a>
@@ -360,10 +364,12 @@
                     </div>
     
                 <div class="card card-body text-center">
-                    <h4>Email: femiafolabidiipo@gmail.com</h2>
+                    <!-- <h4>Email: femiafolabidiipo@gmail.com</h2>
                     <h4>Phone: (872) 235 - 2788</h4>
-                    <h4>Chicago, IL - 60629</h4>
-                    <!-- <form action="mailto:myforms@mydomain.com" enctype="text/plain">
+                    <h4>Chicago, IL - 60629</h4> -->
+                     <form id="contactForm">
+                        <div id="alertSuccess" class="alert alert-success" role="alert">Your message has been sent</div>
+                        <div id="alertFail" class="alert alert-danger" role="alert">Pls Enter a Valid Email</div>
                         <div class="form-group">
                             <div class="input-group input-group-lg">
                                 <div class="input-group-prepend">
@@ -371,7 +377,7 @@
                                         <i class="fas fa-user"></i>
                                         </span>
                                 </div>
-                                <input type="text" class="form-control bg-light text-dark" placeholder="Name">
+                                <input name="name" id="name" type="text" class="form-control bg-light text-dark" placeholder="Name" >
                             </div>
                         </div>
                         <div class="form-group">
@@ -381,7 +387,7 @@
                                         <i class="fas fa-envelope"></i>
                                         </span>
                                     </div>
-                                    <input type="text" class="form-control bg-light text-dark" placeholder="Email">
+                                    <input name="email" id="email" type="text" class="form-control bg-light text-dark" placeholder="Email">
                                 </div>
                             </div>
     
@@ -392,13 +398,13 @@
                                 <i class="fa fa-pencil-alt"></i>
                                 </span>
                             </div>
-                            <textarea class="form-control bg-light text-dark" name="Message" id="message"
+                            <textarea name="message" id="message"class="form-control bg-light text-dark"
                             placeholder="Type message here.." col="10"></textarea>
                         </div>
                     </div>
     
                     <input type="submit" value="Submit" class="btn btn-dark btn-lg btn-block">
-                </form> -->
+                </form>
             </div>
         </section>
 
@@ -407,8 +413,8 @@
         <footer id="main-footer" class="bg-dark text-light">
             <div class="container">
             <div class="row py-4">
-                        <div class="col-sm-6 text-center">
-                            <a href="!#" class="btn btn-outline-light"><i class="fas fa-cloud"></i> Download Resume</a><p class="text-danger">This doesnt work yet</p>
+                        <div class="col-sm-6 text-center d-flex">
+                            <a href="!#" class="btn btn-outline-light"><i class="fas fa-cloud"></i> Download Resume</a>
                         </div>
 
                         <div class="col-sm-6 py-2 text-center">
@@ -435,7 +441,8 @@
       integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
       crossorigin="anonymous"
     ></script>
-
+    <script src="https://www.gstatic.com/firebasejs/5.5.9/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.9/firebase-database.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>
