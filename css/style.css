@@ -227,6 +227,10 @@ main .icons a:hover,
   border: none;
 }
 
+#works .list-group-item {
+  background: none;
+}
+
 form #alertSuccess,
 form #alertFail {
   display: none;
