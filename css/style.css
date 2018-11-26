@@ -218,16 +218,16 @@ main .icons a:hover,
   max-height: 250px;
   border-radius: 40%;
 }
-#works {
+#work {
   border-bottom: #33333323 solid 1px;
 }
 
-#works li {
+#work li {
   line-height: 0.7;
   border: none;
 }
 
-#works .list-group-item {
+#work .list-group-item {
   background: none;
 }
 
@@ -267,7 +267,7 @@ form #alertFail {
     margin-top: 30px;
   }
 
-  #works .pading-responsive {
+  #work .pading-responsive {
     padding-top: 40px;
   }
 
