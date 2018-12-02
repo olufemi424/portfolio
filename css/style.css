@@ -214,9 +214,25 @@ main .icons a:hover,
   margin-top: 20px;
 }
 
-#about img {
+#about img.myImg {
   max-height: 250px;
   border-radius: 40%;
+}
+
+.stack {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  justify-content: center;
+}
+
+.stack img {
+  width: 100%;
+  height: 100px;
+  padding: 20px;
+  border: 1px solid #2222226c;
+  box-shadow: 2px 3px #6d757d;
+  border-radius: 2px;
 }
 #work {
   border-bottom: #33333323 solid 1px;
