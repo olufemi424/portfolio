@@ -207,3 +207,9 @@ function alertStatus(status) {
     document.querySelector(status).style.display = "none";
   }, 3000);
 }
+
+//tool tip
+
+$(function() {
+  $('[data-toggle="tooltip"]').tooltip();
+});
