@@ -27,14 +27,13 @@ h4 {
   transition: 400ms;
 }
 
-.sticky-nav {
+.sticky {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 10;
   height: 64px;
-  background-color: rgba(0, 0, 0, 0.493) !important;
 }
 
 .overlay {
@@ -236,6 +235,11 @@ main .icons a:hover,
 }
 #work {
   border-bottom: #33333323 solid 1px;
+}
+
+#work img {
+  min-height: 250px;
+  min-width: 240px;
 }
 
 #work li {

@@ -36,15 +36,20 @@ function close() {
 }
 
 // sticky navbar
-$(document).ready(function() {
-  var $window = $(window);
-  var nav = $("nav");
-  var navTop = nav.offset().top;
+var stickymenu = document.getElementById("nav-display");
+var stickymenuoffset = stickymenu.offsetTop;
 
-  $window.scroll(function() {
-    nav.toggleClass("sticky-nav", $window.scrollTop() > navTop);
-    document.querySelector("#logo").style.marginTop = "50px";
-    document.querySelector(".menu-btn").style.marginTop = "-10px";
+window.addEventListener("scroll", function(e) {
+  requestAnimationFrame(function() {
+    if (window.pageYOffset > stickymenuoffset) {
+      stickymenu.classList.add("sticky");
+      document.querySelector("#logo").style.marginTop = "50px";
+      document.querySelector(".menu-btn").style.marginTop = "-10px";
+    } else {
+      stickymenu.classList.remove("sticky");
+      document.querySelector("#logo").style.marginTop = "-25px";
+      document.querySelector(".menu-btn").style.marginTop = "0";
+    }
   });
 });
 
@@ -55,18 +60,14 @@ $("#year").text(new Date().getFullYear());
 // add smooth scrolling
 $("#nav-display a").on("click", function(e) {
   if (this.hash !== "") {
-    //prevent default
     e.preventDefault();
-    //store hash
     const hash = this.hash;
-    //Animate smooth scroll
     $("html, body").animate(
       {
         scrollTop: $(hash).offset().top
       },
       850,
       function() {
-        //add hash to url after scroll
         window.location.hash = hash;
       }
     );
@@ -98,13 +99,11 @@ TypeWriter.prototype.type = function() {
   const fullText = this.words[currentWord];
   //check if deleting
   if (this.isDeleting) {
-    // remove character
     this.text = fullText.substring(0, this.text.length - 1);
   } else {
     //  add character
     this.text = fullText.substring(0, this.text.length + 1);
   }
-  //insert txt into element
   this.textElement.innerHTML = `<span class="txt"> ${this.text}</span> `;
   //initial type speed
   let typeSpeed = 300;
@@ -115,13 +114,11 @@ TypeWriter.prototype.type = function() {
   if (!this.isDeleting && this.text === fullText) {
     // make pause at end
     typeSpeed = this.wait;
-    //set delete to true
     this.isDeleting = true;
   } else if (this.isDeleting && this.text === "") {
     this.isDeleting = false;
     //move to next word
     this.wordsIndex++;
-    //pause before start typing
     typeSpeed = 500;
   }
   setTimeout(() => this.type(), typeSpeed);
