@@ -206,7 +206,6 @@ function alertStatus(status) {
 }
 
 //tool tip
-
 $(function() {
   $('[data-toggle="tooltip"]').tooltip();
 });

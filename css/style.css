@@ -34,6 +34,7 @@ h4 {
   right: 0;
   z-index: 10;
   height: 64px;
+  background-color: rgba(0, 0, 0, 0.732) !important;
 }
 
 .overlay {
@@ -51,7 +52,7 @@ h4 {
   display: block;
   left: -170px;
   width: 170px;
-  height: 100%;
+  height: 100vh;
   background: #02030354;
   border-right: 1px solid #fff;
   z-index: 10;
