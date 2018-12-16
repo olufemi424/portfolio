@@ -25,7 +25,7 @@ body {
   box-sizing: border-box;
   position: relative;
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)),
-    url(../img/background.jpg) center no-repeat;
+    url(../img/bg.jpg) center no-repeat;
   background-attachment: fixed;
   background-size: cover;
   height: 100%;
