@@ -146,13 +146,12 @@ nav ul {
 }
 
 /****** MAIN DISPLAY NAV *****/
-.bg-img {
+body {
   position: relative;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)),
-    url(../img/background.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)),
+    url(../img/background.jpg) center no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-repeat: no-repeat;
 }
 
 #main-display nav {
@@ -167,7 +166,11 @@ nav ul {
   letter-spacing: 1px;
 }
 #main-display nav ul li {
-  margin-left: 10px;
+  margin-left: 30px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #ffffffb9;
 }
 
 /********* HOME PAGE *********/
@@ -318,5 +321,11 @@ form #alertFail {
 
   #home .showcase {
     margin-left: 15%;
+  }
+}
+
+@media (max-width: 550px) {
+  #home .showcase {
+    margin-top: 45%;
   }
 }
