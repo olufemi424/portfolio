@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Poiret+One");
 @import url("https://fonts.googleapis.com/css?family=Special+Elite");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
 p {
   font-size: 1.3rem;
@@ -16,6 +21,16 @@ h4 {
 }
 
 /* ******** MAIN PAGE ******** */
+body {
+  box-sizing: border-box;
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)),
+    url(../img/background.jpg) center no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%;
+}
+
 #main-display {
   position: relative;
   display: block;
@@ -146,13 +161,6 @@ nav ul {
 }
 
 /****** MAIN DISPLAY NAV *****/
-body {
-  position: relative;
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)),
-    url(../img/background.jpg) center no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-}
 
 #main-display nav {
   border-bottom: 1px #ffffff8e solid;
