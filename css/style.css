@@ -179,6 +179,9 @@ nav ul {
 .navbar-dark .navbar-nav .nav-link {
   color: #ffffffb9;
 }
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #fff;
+}
 
 /********* HOME PAGE *********/
 #home {
