@@ -56,7 +56,7 @@ $("#year").text(new Date().getFullYear());
 
 // SMOOTH SCROLL
 // add smooth scrolling
-$("#nav-display a").on("click", function(e) {
+$("#scroll-top a").on("click", function(e) {
   if (this.hash !== "") {
     e.preventDefault();
     const hash = this.hash;

@@ -23,10 +23,11 @@ h1 {
 }
 h2 {
   font-size: 2rem;
+  color: #133956;
 }
 h3 {
   font-family: "Special Elite", cursive, serif;
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: #133956c8;
 }
 h4 {
@@ -283,6 +284,7 @@ form #alertFail {
   position: fixed;
   bottom: 112px;
   right: 10px;
+  border: 1px solid #133956;
   z-index: 1000;
 }
 
