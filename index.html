@@ -26,14 +26,14 @@
     />
     <link rel="stylesheet" href="css/style.css" />
 
-    <title>Olu | Portfolio</title>
+    <title>Olufemi Afolabi</title>
   </head>
 
   <body data-spy="srcoll" data-target="#main-navigation">
     <!-- SIDE NAVBAR -->
     <nav id="primary_nav" class="bg-light">
       <div id="logo">
-        <a href="index.html" class="text-dark"> '(- _ -)' </a>
+        <a href="index.html" class="text-dark"> <i class="fa fa-home"></i></a>
       </div>
       <ul class="menu">
         <li class="active-link">
@@ -41,15 +41,9 @@
             <i class="fas fa-home d-block text-dark ml-2"> <span>Home</span></i>
           </a>
         </li>
+
         <li>
-          <a href="#about">
-            <i class="fas fa-user-tie d-block text-dark ml-2">
-              <span> About</span></i
-            >
-          </a>
-        </li>
-        <li>
-          <a href="#work">
+          <a href="portfolio.html">
             <i class="fas fa-graduation-cap d-block text-dark">
               <span>Portfolio</span></i
             >
@@ -63,7 +57,7 @@
           </a>
         </li>
         <li>
-          <a href="#contact">
+          <a href="contact.html">
             <i class="fas fa-graduation-cap d-block text-dark ml-2">
               <span>Contact</span></i
             >
@@ -106,10 +100,12 @@
       <!-- MAIN NAVIGATION -->
       <nav
         id="nav-display"
-        class="navbar navbar-expand-sm navbar-dark justify-content-between navbar-transparent"
+        class="navbar navbar-expand-md justify-content-between navbar-transparent"
       >
         <div class="container">
-          <a href="index.html" class="navbar-brand ml-4">'(- _ -)'</a>
+          <a href="index.html" class="navbar-brand ml-4"
+            ><i class="fa fa-home"></i
+          ></a>
           <div>
             <div id="mobile_nav" class="menu-btn">
               <div class="btn-line"></div>
@@ -118,20 +114,17 @@
             </div>
             <div class="collapse navbar-collapse" id="navbarCollapse">
               <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                  <a href="index.html" class="nav-link">Home</a>
+                <li class="nav-item">
+                  <a href="index.html" class="nav-link active">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a href="#about" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#work" class="nav-link">Portfolio</a>
+                  <a href="portfolio.html" class="nav-link">Portfolio</a>
                 </li>
                 <li class="nav-item">
                   <a href="blog.html" class="nav-link">Blog</a>
                 </li>
                 <li class="nav-item">
-                  <a href="#contact" class="nav-link">Contact</a>
+                  <a href="contact.html" class="nav-link">Contact</a>
                 </li>
               </ul>
             </div>
@@ -141,460 +134,211 @@
 
       <!-- BODY STARTS HERE -->
 
-      <!-- MAIN HEADER DISPLAY -->
-      <div id="home">
+      <!-- HOME SECTION -->
+      <section id="home" class="bg-light py-5">
         <div class="container">
-          <main class="showcase">
-            <h1 class="animated fadeInDownBig">
-              Olufemi <span class="text-light">Afolabi</span>
-            </h1>
-            <h2 class="sm-heading text-light">
-              <span id="typewriter" data-wait="3000"></span> ...
-            </h2>
+          <img
+            class="myImg img-thumbnail image-fluid animated bounce mb-3"
+            src="img/32627516.jpg"
+            alt="image"
+          />
+          <h1 class="animated slideInLeft">Hey, I'm Olu.</h1>
+          <h2 class="sm-heading"><span id="typewriter"></span> ...</h2>
 
-            <div class="icons animated bounceInLeft">
-              <a href="https://codepen.io/olufemi424/" target="_blank"
-                ><i class="fab fa-codepen fa-2x"></i
-              ></a>
-              <a
-                href="https://www.linkedin.com/in/olufemiafolabi91"
-                target="_blank"
-                ><i class="fab fa-linkedin fa-2x"></i
-              ></a>
-              <a href="https://github.com/olufemi424" target="_blank"
-                ><i class="fab fa-github fa-2x"></i
-              ></a>
-            </div>
-          </main>
-        </div>
-      </div>
-
-      <!-- ABOUT SECTION -->
-      <section id="about" class="bg-light py-5">
-        <div class="container">
-          <div class="row text-center">
-            <div class="col">
-              <div class="about-header">
-                <h2>About <span class="text-secondary">Me</span></h2>
-              </div>
-              <h3>Get To Know Me</h3>
-            </div>
+          <div class="icons mt-5">
+            <a href="https://codepen.io/olufemi424/" target="_blank"
+              ><i class="fab fa-codepen fa-2x mr-3"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/olufemiafolabi91"
+              target="_blank"
+              ><i class="fab fa-linkedin fa-2x mr-3"></i
+            ></a>
+            <a href="https://github.com/olufemi424" target="_blank"
+              ><i class="fab fa-github fa-2x mr-3"></i
+            ></a>
           </div>
 
-          <div class="jumbotron shadow-sm bg-light">
-            <div class="row">
-              <div class="col-md-4 align-item-center">
-                <img
-                  class="myImg img-thumbnail image-fluid"
-                  src="img/32627516.jpg"
-                  alt=""
-                />
-              </div>
-              <div class="col-md-8">
-                <h3 class="muted mt-sm-3">BIO</h3>
-                <p class="lead">
-                  Knowledgeable self-taught full stack web developer , but also
-                  have academic interests and experience in the field. Extensive
-                  knowledge of web applications and software development.
-                  Possessing the ability to learn fast, take initiative,
-                  prioritize multiple tasks in a fast pace working environment.
-                  Outside of work I like traveling, cooking, sports, video game,
-                  and spending time with family.
-                </p>
-              </div>
-            </div>
-          </div>
+          <h3 class="muted mt-5"><strong>About me</strong></h3>
+          <div class="animated slideInRight">
+            <p>
+              I am a self taught software developer, but also have academic
+              interests and experience in the field.
+            </p>
+            <p>
+              Extensive knowledge of web applications and software development.
+              Possessing the ability to learn fast, take initiative, prioritize
+              multiple tasks in a fast pace working environment.
+            </p>
 
-          <section class="stack-section py-2 pb-4">
-            <div class="row text-center">
-              <div class="col">
-                <div class="about-header mb-3">
-                  <h2>Tech <span class="text-secondary">Stack</span></h2>
-                </div>
-                <h3>To name a few, but not limited..</h3>
-              </div>
-            </div>
-
-            <div class="stack py-4">
-              <img
-                class="bg-white"
-                data-toggle="tooltip"
-                data-placement="top"
-                title="Javascript"
-                src="./img/stack/JavaScript-logo.png"
-                alt="Javascript"
-              />
-
-              <img
-                class="bg-white"
-                data-toggle="tooltip"
-                data-placement="top"
-                title="Git"
-                src="./img/stack/git.png"
-                alt="Git"
-              />
-
-              <img
-                class="bg-white"
-                data-toggle="tooltip"
-                data-placement="top"
-                title="HTML5"
-                src="./img/stack/html5.png"
-                alt="html5"
-              />
-
-              <img
-                class="bg-white"
-                data-toggle="tooltip"
-                data-placement="top"
-                title="jQuery"
-                src="./img/stack/jquery.png"
-                alt="Javascript"
-              />
-
-              <img
-                class="bg-white"
-                data-toggle="tooltip"
-                data-placement="top"
-                title="php"
-                src="./img/stack/php.png"
-                alt="php"
-              />
-
-              <img
-                class="bg-white"
-                data-toggle="tooltip"
-                data-placement="top"
-                title="Node JS"
-                src="./img/stack/node.png"
-                alt="node"
-              />
-
-              <img
-                class="bg-white"
-                data-toggle="tooltip"
-                data-placement="top"
-                title="React"
-                src="./img/stack/react.png"
-                alt="react"
-              />
-
-              <img
-                class="bg-white"
-                data-toggle="tooltip"
-                data-placement="top"
-                title="VS Code"
-                src="./img/stack/vscode.png"
-                alt="vscode"
-              />
-
-              <img
-                class="bg-white"
-                data-toggle="tooltip"
-                data-placement="top"
-                title="Sass"
-                src="./img/stack/sass.png"
-                alt="sass"
-              />
-
-              <img
-                class="bg-white"
-                data-toggle="tooltip"
-                data-placement="top"
-                title="ASP.NET"
-                src="./img/stack/aspnetpng.png"
-                alt="aspdotnet"
-              />
-
-              <img
-                class="bg-white"
-                data-toggle="tooltip"
-                data-placement="top"
-                title="Github"
-                src="./img/stack/github.png"
-                alt="github"
-              />
-
-              <img
-                class="bg-white"
-                data-toggle="tooltip"
-                data-placement="top"
-                title="Sketch"
-                src="./img/stack/sketch.png"
-                alt="sketch"
-              />
-
-              <img
-                class="bg-white"
-                data-toggle="tooltip"
-                data-placement="top"
-                title="Photoshop"
-                src="./img/stack/photoshop.png"
-                alt="photoshop"
-              />
-
-              <img
-                class="bg-white"
-                data-toggle="tooltip"
-                data-placement="top"
-                title="Google Analytics"
-                src="./img/stack/googleanalytics.png"
-                alt="googleanalytics"
-              />
-
-              <img
-                class="bg-white"
-                data-toggle="tooltip"
-                data-placement="top"
-                title="Bootstrap"
-                src="./img/stack/bootstrap.png"
-                alt="googleanalytics"
-              />
-            </div>
-          </section>
-
-          <div class="row">
-            <div class="col-lg-4 text-center py-2">
-              <div class="card px-3 shadow-sm">
-                <i class="fas fa-code fa-3x py-5"></i>
-                <h3 class="pb-3">Front-end Web Development</h3>
-                <h5 class="text-muted">Full Stack Web Developer</h5>
-                <p>
-                  A full stack developer with an eye for creative design, UI/UX
-                  develoment and a strong desire to learn and explore.
-                </p>
-              </div>
-            </div>
-
-            <div class="col-lg-4 text-center py-2">
-              <div class="card px-3 shadow-sm">
-                <i class="fas fa-cogs fa-3x py-5"></i>
-                <h3 class="pb-3">Software Development</h3>
-                <h5 class="text-muted">Front To Back</h5>
-                <p>
-                  As an enthusiast in technology, i am currently engaged in
-                  software research and development leveraging open source
-                  technologies.
-                </p>
-              </div>
-            </div>
-
-            <div class="col-lg-4 text-center py-2">
-              <div class="card px-3 shadow-sm">
-                <i class="fas fa-desktop fa-3x py-5"></i>
-                <h3 class="pb-3">System Administrator</h3>
-                <h5 class="text-muted">Networking and Maintainence</h5>
-                <p>
-                  Experience in network administrations and database management.
-                  Develop and implement Active Directory security solutions.
-                  Administrative tasks as well as troubleshooting.
-                </p>
-              </div>
-            </div>
-
-            <div class="col text-center mt-3">
-              <div>
-                <p class="text-muted">
-                  <q
-                    >The things you're passionate about are not random. <br />
-                    They are your calling.</q
-                  >
-                </p>
-                <p>-Fabienne Frederickson</p>
-              </div>
-            </div>
+            <p>
+              If I'm not working on a computer you can find me relieving stress
+              by cooking, watching soccer highlights or playing video
+              games(soccer), and most importantly spending time with family.
+            </p>
           </div>
         </div>
       </section>
 
-      <!-- PORTFOLION SHOWCASE -->
-      <section id="work" class="bg-white py-5">
-        <div class="container">
-          <div class="row text-center">
-            <div class="col">
-              <div class="about-header mb-3">
-                <h2>My <span class="text-secondary">Work</span></h2>
-              </div>
-              <h3>Check Out My Projects.</h3>
-            </div>
-          </div>
+      <section class="stack-section py-5">
+        <div class="container text-center">
+          <h3><strong>Tech Stack, but not limited...</strong></h3>
+          <div class="stack py-4">
+            <img
+              class="bg-white"
+              data-toggle="tooltip"
+              data-placement="top"
+              title="Javascript"
+              src="./img/stack/JavaScript-logo.png"
+              alt="Javascript"
+            />
+            <img
+              class="bg-white"
+              data-toggle="tooltip"
+              data-placement="top"
+              title="Git"
+              src="./img/stack/git.png"
+              alt="Git"
+            />
+            <img
+              class="bg-white"
+              data-toggle="tooltip"
+              data-placement="top"
+              title="HTML5"
+              src="./img/stack/html5.png"
+              alt="html5"
+            />
 
-          <!-- port1 -->
+            <img
+              class="bg-white"
+              data-toggle="tooltip"
+              data-placement="top"
+              title="jQuery"
+              src="./img/stack/jquery.png"
+              alt="Javascript"
+            />
 
-          <div class="row mt-2 py-4">
-            <div class="col-md-5 mb-4">
-              <img
-                src="img/moviedb.png"
-                alt="Car Sales"
-                class="img-fluid shadow rounded"
-              />
-            </div>
+            <img
+              class="bg-white"
+              data-toggle="tooltip"
+              data-placement="top"
+              title="php"
+              src="./img/stack/php.png"
+              alt="php"
+            />
 
-            <div class="col-md-7">
-              <h3 class="mb-3 pading-responsive">Description</h3>
-              <p>
-                This is a mini react project that fetches movie details from
-                moviedb.com.
-              </p>
-              <p>
-                <strong>Tools Used: </strong
-                ><i
-                  >HTML5, React, React Styled, Javascript, JSX,
-                  Styled-Component</i
-                >
-              </p>
-              <a
-                href="https://github.com/olufemi424/movie-database"
-                target="_blank"
-                class="btn btn-secondary"
-                ><i class="fab fa-github-square"></i> Github</a
-              >
-            </div>
-          </div>
+            <img
+              class="bg-white"
+              data-toggle="tooltip"
+              data-placement="top"
+              title="Node JS"
+              src="./img/stack/node.png"
+              alt="node"
+            />
 
-          <!-- port2 -->
-          <div class="row mt-2 py-4">
-            <div class="col-md-5 mb-3">
-              <img
-                src="img/pig-game.png"
-                alt="Photo"
-                class="img-fluid image-port shadow rounded"
-              />
-            </div>
-            <div class="col-md-7">
-              <h3 class="pading-responsive">Description</h3>
-              <p>This is a dice-game popularly known as the PIG-GAME.</p>
-              <p>
-                <strong>Tools Used :</strong>
-                <i>HTML CSS bootstrap Javascript</i>
-              </p>
+            <img
+              class="bg-white"
+              data-toggle="tooltip"
+              data-placement="top"
+              title="React"
+              src="./img/stack/react.png"
+              alt="react"
+            />
 
-              <a
-                href="https://olufemi424.github.io/dice-game/"
-                target="_blank"
-                class="btn btn-secondary"
-                ><i class="fab fa-playstation"></i> Play</a
-              >
-              <a
-                href="https://github.com/olufemi424/dice-game"
-                target="_blank"
-                class="btn btn-secondary"
-                ><i class="fab fa-github-square"></i> Github</a
-              >
-            </div>
-          </div>
+            <img
+              class="bg-white"
+              data-toggle="tooltip"
+              data-placement="top"
+              title="VS Code"
+              src="./img/stack/vscode.png"
+              alt="vscode"
+            />
 
-          <div class="row mt-2 py-4">
-            <div class="col-md-5 mb-3">
-              <img
-                src="img/react-form.png"
-                alt="Photo"
-                class="img-fluid image-port shadow rounded"
-              />
-            </div>
-            <div class="col-md-7">
-              <h3 class="mb-3 pading-responsive">Description</h3>
-              <p>
-                Step-by-step form build with react. Back end yet to be
-                implemented.
-              </p>
-              <p>
-                <strong>Tools Used: </strong
-                ><i>HTML, Material UI, JSX, Javascript, React</i>
-              </p>
-              <a
-                href="https://github.com/olufemi424/step-form"
-                target="_blank"
-                class="btn btn-secondary"
-                ><i class="fab fa-github-square"></i> Github</a
-              >
-            </div>
+            <img
+              class="bg-white"
+              data-toggle="tooltip"
+              data-placement="top"
+              title="Sass"
+              src="./img/stack/sass.png"
+              alt="sass"
+            />
+
+            <img
+              class="bg-white"
+              data-toggle="tooltip"
+              data-placement="top"
+              title="ASP.NET"
+              src="./img/stack/aspnetpng.png"
+              alt="aspdotnet"
+            />
+
+            <img
+              class="bg-white"
+              data-toggle="tooltip"
+              data-placement="top"
+              title="Github"
+              src="./img/stack/github.png"
+              alt="github"
+            />
+
+            <img
+              class="bg-white"
+              data-toggle="tooltip"
+              data-placement="top"
+              title="Sketch"
+              src="./img/stack/sketch.png"
+              alt="sketch"
+            />
+
+            <img
+              class="bg-white"
+              data-toggle="tooltip"
+              data-placement="top"
+              title="Photoshop"
+              src="./img/stack/photoshop.png"
+              alt="photoshop"
+            />
+
+            <img
+              class="bg-white"
+              data-toggle="tooltip"
+              data-placement="top"
+              title="Google Analytics"
+              src="./img/stack/googleanalytics.png"
+              alt="googleanalytics"
+            />
+
+            <img
+              class="bg-white"
+              data-toggle="tooltip"
+              data-placement="top"
+              title="Bootstrap"
+              src="./img/stack/bootstrap.png"
+              alt="googleanalytics"
+            />
           </div>
         </div>
       </section>
 
-      <!-- CONTACT SECTION -->
-      <section id="contact" class="py-5 bg-light">
-        <div class="container">
-          <div class="row text-center">
-            <div class="col-md-8 mx-auto">
-              <h2 class="mb-3">
-                Contact <span class="text-secondary">Me</span>
-              </h2>
-              <h3 class="my-3">I'd love To Hear From You!</h3>
-
-              <div class="card card-body text-center">
-                <form id="contactForm">
-                  <div
-                    id="alertSuccess"
-                    class="alert alert-success"
-                    role="alert"
-                  >
-                    Your message has been sent
-                  </div>
-                  <div id="alertFail" class="alert alert-danger" role="alert">
-                    Pls Enter a Valid Email
-                  </div>
-                  <div class="form-group">
-                    <div class="input-group input-group-lg">
-                      <div class="input-group-prepend">
-                        <span class="input-group-text bg-dark text-white">
-                          <i class="fas fa-user"></i>
-                        </span>
-                      </div>
-                      <input
-                        name="name"
-                        id="name"
-                        type="text"
-                        class="form-control bg-light text-dark"
-                        placeholder="Name"
-                        required
-                      />
-                    </div>
-                  </div>
-
-                  <div class="form-group">
-                    <div class="input-group input-group-lg">
-                      <div class="input-group-prepend">
-                        <span class="input-group-text bg-dark text-white">
-                          <i class="fas fa-envelope"></i>
-                        </span>
-                      </div>
-                      <input
-                        name="email"
-                        id="email"
-                        type="text"
-                        class="form-control bg-light text-dark"
-                        placeholder="Email"
-                      />
-                    </div>
-                  </div>
-
-                  <div class="form-group">
-                    <div class="input-group input-group-lg">
-                      <div class="input-group-prepend">
-                        <span class="input-group-text bg-dark   text-white">
-                          <i class="fa fa-pencil-alt"></i>
-                        </span>
-                      </div>
-                      <textarea
-                        name="message"
-                        id="message"
-                        class="form-control bg-light text-dark"
-                        placeholder="Type message here.."
-                      ></textarea>
-                    </div>
-                  </div>
-
-                  <input
-                    type="submit"
-                    value="Submit"
-                    class="btn btn-dark btn-lg btn-block"
-                  />
-                </form>
-              </div>
-            </div>
-          </div>
+      <section id="homeContact" class="py-5 bg-light">
+        <div class="container text-center">
+          <h3><strong>My work & contact</strong></h3>
+          <p>
+            You can find out more about my personal projects and what i am
+            working on in my <a href="portfolio.html">portfolio</a>. Please do
+            not hesitate to reach out if you would like to discuss your project.
+          </p>
+          <p>
+            The best way to <a href="contact.html">contact</a> me is via my
+            <a href="https://www.instagram.com/olufemiaf/">instagram</a> or by
+            sending me an <a href="mailto:olufemiaf@gmail.com">email</a>.
+          </p>
+          <p class="text-muted pt-4">
+            <q
+              >The things you're passionate about are not random. <br />
+              They are your calling.</q
+            >
+          </p>
         </div>
       </section>
 
@@ -612,7 +356,8 @@
             </div>
 
             <div class="col-sm-6 py-2 text-center">
-              Copyright &copy; <span id="year"></span> Olufemi Afolabi '(- _ -)'
+              Copyright &copy; Olufemi Afolabi ❤️ All rights reserved.
+              <span id="year"></span>
             </div>
           </div>
         </div>
