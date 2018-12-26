@@ -84,7 +84,7 @@ h4 {
   position: absolute;
   z-index: 999;
   left: 35px;
-  top: 27px;
+  top: 20px;
   cursor: pointer;
   opacity: 1000;
   transition: all 0.5s ease-out;
@@ -114,7 +114,6 @@ h4 {
 /********* SIDE BAR NAV **************/
 #primary_nav ul {
   display: block;
-  margin-top: 80px;
   padding-left: 5px;
   list-style: none;
   margin-top: 150px;
@@ -171,13 +170,13 @@ nav ul .fas {
 /****** MAIN DISPLAY NAV *****/
 
 #main-display nav {
-  border-bottom: 1px #6b6b6ba7 solid;
-  padding: 20px;
+  border-bottom: 1px #133956c4 solid;
+  padding: 10px;
   background-color: rgba(0, 0, 0, 0.057);
 }
 
 #nav-display .fa {
-  color: #6b6b6b;
+  color: #133956;
 }
 
 #main-display nav ul {
@@ -186,16 +185,17 @@ nav ul .fas {
   font-weight: 500;
 }
 #main-display nav ul li a {
-  color: #6b6b6b;
+  color: #133956;
   margin-left: 20px;
 }
 
 #main-display nav ul li a:hover {
-  color: #434242;
+  color: #133956c4;
 }
 
 #main-display nav ul li a.active {
-  color: #434242;
+  font-weight: bold;
+  color: #133956;
 }
 
 /********* HOME PAGE *********/

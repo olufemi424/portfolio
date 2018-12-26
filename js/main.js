@@ -44,11 +44,9 @@ window.addEventListener("scroll", function(e) {
     if (window.pageYOffset > stickymenuoffset) {
       stickymenu.classList.add("sticky");
       document.querySelector("#logo").style.marginTop = "50px";
-      document.querySelector(".menu-btn").style.marginTop = "-10px";
     } else {
       stickymenu.classList.remove("sticky");
       document.querySelector("#logo").style.marginTop = "-25px";
-      document.querySelector(".menu-btn").style.marginTop = "0";
     }
   });
 });
