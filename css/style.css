@@ -99,6 +99,7 @@ h4 {
   cursor: pointer;
   opacity: 1000;
   transition: all 0.5s ease-out;
+  z-index: 1000;
 }
 .menu-btn .btn-line {
   width: 33px;
@@ -324,7 +325,7 @@ form #alertFail {
     margin-left: 50% !important;
   }
   #work img {
-    max-width: 400px;
+    max-width: 350px;
   }
 }
 
