@@ -16,6 +16,7 @@ body {
 p {
   font-size: 1.25rem;
   font-weight: 300;
+  color: #000000ba;
 }
 h1 {
   font-size: 2.5rem;
@@ -23,10 +24,10 @@ h1 {
 }
 h2 {
   font-size: 2rem;
-  color: #133956;
+  color: #133956c8;
 }
 h3 {
-  font-family: "Special Elite", cursive, serif;
+  font-family: "Special Elite", sans-serif;
   font-size: 1.8rem;
   color: #133956c8;
 }
@@ -34,8 +35,12 @@ h4 {
   font-size: 1.8rem;
 }
 
-/* ******** MAIN PAGE ******** */
+/* over rides */
+.bg-dark {
+  background: #133956 !important;
+}
 
+/* ******** MAIN PAGE ******** */
 #main-display {
   position: relative;
   display: block;
@@ -55,6 +60,11 @@ h4 {
   z-index: 10;
   height: 64px;
   background-color: #13395674 !important;
+}
+
+.sticky a,
+.sticky .fa {
+  color: #ffffffe1 !important;
 }
 
 .overlay {
@@ -117,7 +127,7 @@ h4 {
   display: block;
   padding-left: 5px;
   list-style: none;
-  margin-top: 150px;
+  margin-top: 60px;
 }
 
 .active-link {
@@ -128,8 +138,11 @@ h4 {
   position: relative;
   margin-left: 10px;
   top: 40px;
-  left: 40px;
+  left: 20px;
   font-size: 25px;
+}
+#logo a {
+  color: #133956;
 }
 .menu li a {
   text-decoration: none;
@@ -169,7 +182,6 @@ nav ul .fas {
 }
 
 /****** MAIN DISPLAY NAV *****/
-
 #main-display nav {
   border-bottom: 1px #133956c4 solid;
   padding: 10px;
@@ -201,33 +213,34 @@ nav ul .fas {
 
 /********* HOME PAGE *********/
 #home {
-  position: relative;
   text-align: center;
-  border-bottom: #33333323 solid 1px;
+  border-bottom: 1px #13395635 solid;
 }
-
-#home img.myImg {
-  max-height: 250px;
-  border-radius: 40%;
+#home img {
+  max-height: 220px;
+  border-radius: 50%;
+  border: 1px solid #13395644;
 }
 
 #home h1 {
   padding: 20px;
-  font-weight: 700;
+  font-weight: bold;
 }
 
 #home h2 {
-  font-weight: 500;
+  font-weight: bold;
+
   line-height: 1.1;
 }
 
 .icons .fab {
-  color: #434242;
+  color: #133956;
+  font-size: 22px;
 }
 .icons .fab:hover {
-  color: #133956;
+  color: #133956c4;
 }
-
+/* TECH STACK */
 .stack {
   display: grid;
   grid-gap: 20px;
@@ -238,18 +251,25 @@ nav ul .fas {
 .stack img {
   width: 100%;
   height: 100px;
-  padding: 20px;
-  border: 1px solid #2222226c;
-  box-shadow: 2px 3px #6d757d;
+  padding: 15px;
+  border: 1px solid #133956c4;
+  box-shadow: 2px 3px #6d757dc9;
   border-radius: 2px;
 }
 
-#homeContact a {
-  color: #133956c1;
+.stack img:hover {
+  box-shadow: 2px 3px #133956;
 }
 
-#work {
-  border-bottom: #33333323 solid 1px;
+/* HOME CONTACT AND WORK SECTION */
+
+#homeContact a {
+  color: #133956c8;
+}
+
+/* PORTFOLIO WORK SECTION */
+#homeContact {
+  border-top: #33333323 solid 1px;
 }
 
 #work img {
@@ -266,6 +286,8 @@ nav ul .fas {
   background: none;
 }
 
+/* CONTACT SECTION */
+
 form #alertSuccess,
 form #alertFail {
   display: none;
@@ -274,18 +296,24 @@ form #alertFail {
 .space {
   background: #f8f9fa;
   width: 100%;
-  height: 200px;
+  height: 150px;
 }
 /********** FOOTER **********/
+#main-footer {
+  background: #133956;
+}
 
 /********** SCROLL TOP **********/
-
 #scroll-top {
+  display: none;
   position: fixed;
-  bottom: 112px;
+  bottom: 75px;
   right: 10px;
   border: 1px solid #133956;
   z-index: 1000;
+}
+#scroll-top a {
+  color: #133956;
 }
 
 @media (max-width: 768px) {
@@ -294,6 +322,9 @@ form #alertFail {
   }
   .navbar-brand {
     margin-left: 50% !important;
+  }
+  #work img {
+    max-width: 400px;
   }
 }
 
@@ -306,5 +337,17 @@ form #alertFail {
   }
   .space {
     display: none;
+  }
+  #scroll-top {
+    display: block;
+  }
+}
+
+@media (min-width: 900px) {
+  #home img {
+    margin-right: -10%;
+  }
+  .homeInfo {
+    margin-left: -10%;
   }
 }
