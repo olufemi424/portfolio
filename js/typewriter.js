@@ -9,12 +9,7 @@ const TypeWriter = function(textElement, words, wait = 3000) {
   this.isDeleting = false;
 };
 
-const dataWords = [
-  "Web Development",
-  "Programming",
-  "Designer",
-  "Entrepreneur"
-];
+const dataWords = ["Web Developer", "Programmer", "Designer", "Entrepreneur"];
 // type method
 TypeWriter.prototype.type = function() {
   // current index of work

@@ -55,7 +55,7 @@
             </i>
           </a>
         </li>
-        <li  class="active-link">
+        <li class="active-link">
           <a href="contact.html">
             <i class="fas fa-graduation-cap d-block text-dark ml-2">
               <span>Contact</span></i
@@ -113,6 +113,9 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
+                  <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
                   <a href="portfolio.html" class="nav-link">Portfolio</a>
                 </li>
                 <li class="nav-item">
@@ -132,79 +135,102 @@
       <!-- CONTACT SECTION -->
       <section id="contact" class="py-5 bg-light">
         <div class="container">
+          <div class="row text-center">
+            <div class="col">
+              <h1 class="mb-4">Contact</h1>
+              <h3 class="my-3 mb-4">I'd love To Hear From You!</h3>
+            </div>
+          </div>
           <div class="row">
             <div class="col-md-9 mx-auto">
-                <h3 class="my-3">I'd love To Hear From You!</h3>
+              <div class="card card-body text-center p-5 animated fadeInUp">
+                <form id="contactForm">
+                  <div
+                    id="alertSuccess"
+                    class="alert alert-success"
+                    role="alert"
+                  >
+                    Your message has been sent
+                  </div>
+                  <div id="alertFail" class="alert alert-danger" role="alert">
+                    Pls Enter a Valid Email
+                  </div>
+                  <div class="form-group">
+                    <div class="input-group input-group-lg">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text bg-dark text-white">
+                          <i class="fas fa-user"></i>
+                        </span>
+                      </div>
+                      <input
+                        name="name"
+                        id="name"
+                        type="text"
+                        class="form-control bg-light text-dark"
+                        placeholder="Name"
+                        required
+                      />
+                    </div>
+                  </div>
 
-                <div class="card card-body text-center p-5 animated fadeInUp">
-                  <form id="contactForm">
-                    <div
-                      id="alertSuccess"
-                      class="alert alert-success"
-                      role="alert"
-                    >
-                      Your message has been sent
-                    </div>
-                    <div id="alertFail" class="alert alert-danger" role="alert">
-                      Pls Enter a Valid Email
-                    </div>
-                    <div class="form-group">
-                      <div class="input-group input-group-lg">
-                        <div class="input-group-prepend">
-                          <span class="input-group-text bg-dark text-white">
-                            <i class="fas fa-user"></i>
-                          </span>
-                        </div>
-                        <input
-                          name="name"
-                          id="name"
-                          type="text"
-                          class="form-control bg-light text-dark"
-                          placeholder="Name"
-                          required
-                        />
+                  <div class="form-group">
+                    <div class="input-group input-group-lg">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text bg-dark text-white">
+                          <i class="fas fa-envelope"></i>
+                        </span>
                       </div>
+                      <input
+                        name="email"
+                        id="email"
+                        type="text"
+                        class="form-control bg-light text-dark"
+                        placeholder="Email"
+                      />
                     </div>
-  
-                    <div class="form-group">
-                      <div class="input-group input-group-lg">
-                        <div class="input-group-prepend">
-                          <span class="input-group-text bg-dark text-white">
-                            <i class="fas fa-envelope"></i>
-                          </span>
-                        </div>
-                        <input
-                          name="email"
-                          id="email"
-                          type="text"
-                          class="form-control bg-light text-dark"
-                          placeholder="Email"
-                        />
-                      </div>
-                    </div>
-                    <div class="md-form pb-5">
-                        <textarea class="form-control bg-light md-textarea text-dark" id="message" placeholder="Pls type message here..." rows="5"></textarea>
-                    </div>
-                    <input
-                      type="submit"
-                      value="Submit"
-                      class="btn bg-dark text-white btn-lg btn-block"
-                    />
-                  </form>
-                </div>
+                  </div>
+                  <div class="md-form pb-5">
+                    <textarea
+                      class="form-control bg-light md-textarea text-dark"
+                      id="message"
+                      placeholder="Pls type message here..."
+                      rows="5"
+                    ></textarea>
+                  </div>
+                  <input
+                    type="submit"
+                    value="Submit"
+                    class="btn bg-dark text-white btn-lg btn-block"
+                  />
+                </form>
+              </div>
+              <div class="icons mt-5 text-center">
+                <a href="https://codepen.io/olufemi424/" target="_blank"
+                  ><i class="fab fa-codepen mr-3"></i
+                ></a>
+                <a
+                  href="https://www.linkedin.com/in/olufemiafolabi91"
+                  target="_blank"
+                  ><i class="fab fa-linkedin mr-3"></i
+                ></a>
+                <a href="https://instagram.com/olufemiaf" target="_blank"
+                  ><i class="fab fa-instagram mr-3"></i
+                ></a>
+                <a href="https://github.com/olufemi424" target="_blank"
+                  ><i class="fab fa-github mr-3"></i
+                ></a>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <div class="space"></div>
-
       <!-- FOOTER -->
-      <footer id="main-footer" class="text-light">
-          <div class="container py-5 text-center">
-            Copyright &copy; Olufemi Afolabi ❤️ All rights reserved.
-            <span id="year"></span>
-          </div>
+      <footer id="main-footer" class="text-light mt-5">
+        <div class="container py-5 text-center">
+          Copyright &copy; Olufemi Afolabi ❤️ All rights reserved.
+          <span id="year"></span>
+        </div>
       </footer>
     </div>
     <script

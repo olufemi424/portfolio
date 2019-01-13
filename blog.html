@@ -22,73 +22,92 @@
   </head>
 
   <body>
-      <!-- MAIN HEADER DISPLAY -->
-      <div id="main-display" class="bg-white">
-        <!--MAIN NAVIGATION -->
-        <nav class="navbar navbar-expand-md navbar-light  justify-content-between pr-5">
-                <div class="container">
-                    <a href="index.html" class="navbar-brand ml-4"
+    <!-- MAIN HEADER DISPLAY -->
+    <div id="main-display" class="bg-white">
+      <!--MAIN NAVIGATION -->
+      <nav
+        id="nav-display"
+        class="navbar navbar-expand-sm justify-content-between navbar-transparent"
+      >
+        <div class="container">
+          <a href="index.html" class="navbar-brand ml-4"
             ><i class="fa fa-home"></i
           ></a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                      </button>
-                    <div class="collapse navbar-collapse" id="navbarCollapse">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item">
-                                <a href="index.html" class="nav-link">Home</a>
-                            </li>
-                            <li class="nav-item active">
-                                <a href="blog.html" class="nav-link active">Blog</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="contact.html" class="nav-link">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </nav>
+          <div>
+            <div id="mobile_nav" class="menu-btn">
+              <div class="btn-line"></div>
+              <div class="btn-line"></div>
+              <div class="btn-line"></div>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="portfolio.html" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a href="blog.html" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a href="contact.html" class="nav-link active">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
 
-        <!-- BODY STARTS HERE -->
-        <div class="container pt-5">
-       <div class="row">
-         <div class="col">
-           <h1 class="mb-4">Blog</h1>
-            <h2>Welcome to my blog, Here i will be sharing my story</h2>
-         </div>
-       </div>
+      <!-- BODY STARTS HERE -->
+      <div class="container py-5">
+        <div class="row text-center">
+          <div class="col">
+            <h1 class="mb-4">Blog</h1>
+            <h2 class="mb-3">
+              Welcome to my blog, Here i will be sharing great tips and my
+              journey to becoming a software/web developer.
+            </h2>
+          </div>
         </div>
         <!-- BLOG POST 1 -->
-       <article>
-       <div class="container py-5">
-         <div class="row">
-           <div class="col-md-2 bg-dark rounded"></div>
-           <div class="col-md-10">
-             <div class="card">
-               <div class="card-title mt-3 ml-3">
+        <article>
+          <div class="row">
+            <div class="col-md-2 bg-dark rounded"></div>
+            <div class="col-md-10">
+              <div class="card">
+                <div class="card-title mt-3 ml-3">
                   <h3>Introduction to HTML and CSS</h3>
                   <p class="text-muted">November, 19, 2018</p>
                 </div>
-               <div class="card-body">
-                  <p>Get started creating web pages with HTML and CSS, the basic building blocks of web development. HTML, or HyperText Markup Language, is a standard set of tags you will use to tell the web browser how the content of your web pages and applications are structured. Use CSS, or Cascading Style Sheets, to select HTML tags and tell the browser what your content should look like. Whether you are coding for fun or planning to start a career in web development, learning HTML and CSS is a great place to start.</p>
-               </div>
-             </div>
-           </div>
-         </div>
-       </div>
-       </article>
-       <div class="space"></div>
-
-
-        <!-- FOOTER -->
-
-        <footer id="main-footer" class="text-light">
-            <div class="container py-5 text-center">
-              Copyright &copy; Olufemi Afolabi ❤️ All rights reserved.
-              <span id="year"></span>
+                <div class="card-body">
+                  <p>
+                    Get started creating web pages with HTML and CSS, the basic
+                    building blocks of web development. HTML, or HyperText
+                    Markup Language, is a standard set of tags you will use to
+                    tell the web browser how the content of your web pages and
+                    applications are structured. Use CSS, or Cascading Style
+                    Sheets, to select HTML tags and tell the browser what your
+                    content should look like. Whether you are coding for fun or
+                    planning to start a career in web development, learning HTML
+                    and CSS is a great place to start.
+                  </p>
+                </div>
+              </div>
             </div>
-        </footer>
+          </div>
+        </div>
+      </article>
+      <div class="space"></div>
+
+      <!-- FOOTER -->
+
+      <footer id="main-footer" class="text-light">
+        <div class="container py-5 text-center">
+          Copyright &copy; Olufemi Afolabi ❤️ All rights reserved.
+          <span id="year"></span>
+        </div>
+      </footer>
     </div>
     <script
       src="http://code.jquery.com/jquery-3.3.1.min.js"

@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Special+Elite");
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+@import url("https://fonts.googleapis.com/css?family=Acme|Anton|Patua+One");
 * {
   padding: 0;
   margin: 0;
@@ -21,18 +21,23 @@ p {
 h1 {
   font-size: 2.5rem;
   color: #133956;
+  font-family: "Patua One", sans-serif;
+}
+h2,
+h3,
+h4 {
+  font-family: "Acme", sans-serif;
+  color: #133956c8;
 }
 h2 {
-  font-size: 2rem;
-  color: #133956c8;
+  font-size: 1.8rem;
 }
 h3 {
-  font-family: "Special Elite", sans-serif;
   font-size: 1.8rem;
-  color: #133956c8;
 }
-h4 {
-  font-size: 1.8rem;
+h5 {
+  font-size: 1.2rem;
+  color: #133956c8;
 }
 
 /* over rides */
@@ -195,8 +200,9 @@ nav ul .fas {
 
 #main-display nav ul {
   text-transform: uppercase;
+  font-weight: 400;
   font-size: 14px;
-  font-weight: 500;
+  font-family: "Acme", sans-serif;
 }
 #main-display nav ul li a {
   color: #133956;
@@ -297,7 +303,7 @@ form #alertFail {
 .space {
   background: #f8f9fa;
   width: 100%;
-  height: 150px;
+  height: 100px;
 }
 /********** FOOTER **********/
 #main-footer {
