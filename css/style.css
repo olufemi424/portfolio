@@ -310,6 +310,14 @@ form #alertFail {
   background: #133956;
 }
 
+footer {
+  font-size: 13px;
+}
+footer .btn a,
+footer .btn i {
+  font-size: 13px;
+}
+
 /********** SCROLL TOP **********/
 #scroll-top {
   display: none;
