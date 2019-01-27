@@ -1,9 +1,18 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="google-site-verification"
+      content="MAmU0oYEyhANaWKVIPMH6O9feU0xQdCbkCb5nTyWTm0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css"
+    />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
@@ -18,21 +27,84 @@
     />
     <link rel="stylesheet" href="css/style.css" />
 
-    <title>Olu | Portfolio</title>
+    <title>Olufemi Afolabi</title>
   </head>
 
-  <body>
+  <body data-spy="srcoll" data-target="#main-navigation">
+    <!-- SIDE NAVBAR -->
+    <nav id="primary_nav" class="bg-light">
+      <div id="logo">
+        <a href="index.html" class="text-dark"> <i class="fa fa-home"></i></a>
+      </div>
+      <ul class="menu">
+        <li>
+          <a href="index.html">
+            <i class="fas fa-home d-block text-dark ml-2"> <span>Home</span></i>
+          </a>
+        </li>
+        <li>
+          <a href="portfolio.html">
+            <i class="fas fa-graduation-cap d-block text-dark">
+              <span>Portfolio</span></i
+            >
+          </a>
+        </li>
+        <li>
+          <a href="blog.html">
+            <i class="fas fa-envelope d-block text-dark ml-2">
+              <span>Blog</span>
+            </i>
+          </a>
+        </li>
+        <li class="active-link">
+          <a href="contact.html">
+            <i class="fas fa-graduation-cap d-block text-dark ml-2">
+              <span>Contact</span></i
+            >
+          </a>
+        </li>
+      </ul>
+
+      <ul class="text-center">
+        <li>
+          <a
+            class="text-dark x"
+            href="https://codepen.io/olufemi424/"
+            target="_blank"
+            ><i class="fab fa-codepen fa-2x"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            class="text-dark x"
+            href="https://www.linkedin.com/in/olufemiafolabi91"
+            target="_blank"
+            ><i class="fab fa-linkedin fa-2x"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            class="text-dark x"
+            href="https://github.com/olufemi424"
+            target="_blank"
+            ><i class="fab fa-github fa-2x"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+
     <!-- MAIN HEADER DISPLAY -->
-    <div id="main-display" class="bg-white">
-      <!--MAIN NAVIGATION -->
+    <div id="main-display" class="bg-img">
+      <div id="overlay"></div>
+      <!-- MAIN NAVIGATION -->
       <nav
         id="nav-display"
-        class="navbar navbar-expand-sm justify-content-between navbar-transparent"
+        class="navbar navbar-expand-md justify-content-between navbar-transparent"
       >
         <div class="container">
-          <a href="index.html" class="navbar-brand ml-4"
-            ><i class="fa fa-home"></i
-          ></a>
+          <a href="index.html" class="navbar-brand ml-4">
+            <i class="fa fa-home"></i>
+          </a>
           <div>
             <div id="mobile_nav" class="menu-btn">
               <div class="btn-line"></div>
@@ -58,6 +130,8 @@
           </div>
         </div>
       </nav>
+
+      <!-- BODY STARTS HERE -->
 
       <!-- BODY STARTS HERE -->
       <div class="container py-5">
@@ -101,8 +175,7 @@
       <div class="space"></div>
 
       <!-- FOOTER -->
-
-      <footer id="main-footer" class="text-light">
+      <footer id="main-footer" class="text-light mt-5">
         <div class="container py-3 text-center">
           Copyright &copy; Olufemi Afolabi ❤️ All rights reserved.
           <span id="year"></span>
@@ -124,7 +197,9 @@
       integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
       crossorigin="anonymous"
     ></script>
-
-    <!-- <script type="text/javascript" src="js/main.js"></script> -->
+    <script src="https://www.gstatic.com/firebasejs/5.5.9/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.9/firebase-database.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
   </body>
 </html>
