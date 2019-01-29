@@ -341,6 +341,11 @@ footer .btn i {
   #work img {
     max-width: 350px;
   }
+
+  /*BLOG*/
+  .blog-aside {
+    display: none;
+  }
 }
 
 @media (max-width: 550px) {
