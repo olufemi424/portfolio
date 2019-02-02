@@ -349,10 +349,8 @@ nav ul .fas {
 =============================================*/
 
 #work img {
-  display: block;
-  margin-left: 0;
-  margin-right: 0;
   transition: all 300ms;
+  width: 350px;
 }
 
 #work img:hover {
@@ -423,6 +421,10 @@ footer {
 @media (max-width: 768px) {
   .menu-btn {
     display: block;
+  }
+
+  #main-display nav ul {
+    display: none;
   }
 
   .sticky .menu-btn {
