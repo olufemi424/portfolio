@@ -350,7 +350,6 @@ nav ul .fas {
 
 #work img {
   transition: all 300ms;
-  width: 350px;
 }
 
 #work img:hover {
@@ -433,6 +432,14 @@ footer {
 
   .navbar-brand {
     margin-left: 50% !important;
+  }
+
+  #work h2 {
+    margin-top: 20px;
+  }
+
+  #work .row {
+    text-align: center;
   }
 
   /*BLOG*/
