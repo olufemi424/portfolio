@@ -11,38 +11,61 @@ body {
   background-color: #fff;
   font-family: "Source Sans Pro", sans-serif;
   border-top: 3px solid #133956;
+  font-size: 10px;
 }
 
+/*=============================================
+=            TYPOGRAPGY            =
+=============================================*/
+
 p {
-  font-size: 1.25rem;
+  font-size: 2rem;
   font-weight: 300;
   color: #000000ba;
 }
 h1 {
-  font-size: 2.5rem;
-  color: #133956;
+  font-size: 4.2rem;
   font-family: "Patua One", sans-serif;
 }
-h2,
-h3,
-h4 {
-  font-family: "Acme", sans-serif;
-  color: #133956c8;
-}
 h2 {
-  font-size: 1.8rem;
-}
-h3 {
-  font-size: 1.8rem;
-}
-h5 {
-  font-size: 1.2rem;
-  color: #133956c8;
+  font-size: 3.2rem;
 }
 
-/* over rides */
+h3 {
+  font-size: 2.8rem;
+  font-weight: 600;
+  color: #797979;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+h1,
+h2 {
+  background-image: linear-gradient(to right, #133956, #28b485);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+h2 {
+  font-family: "Acme", sans-serif;
+}
+/*=====  End of TYPOGRAPGY  ======*/
+
+/* ******** OVERRIDES ******** */
+.btn {
+  font-size: 1.7rem;
+}
+.btn-sm {
+  font-size: 1.3rem;
+}
+.btn-lg {
+  font-size: 2rem;
+}
 .bg-dark {
-  background: #133956 !important;
+  background-image: linear-gradient(to top, #13395670, #28b485);
 }
 
 /* ******** MAIN PAGE ******** */
@@ -57,6 +80,8 @@ h5 {
   transition: 400ms;
 }
 
+/* ******** STICKY ******** */
+
 .sticky {
   position: fixed;
   top: 0;
@@ -64,7 +89,7 @@ h5 {
   right: 0;
   z-index: 10;
   height: 64px;
-  background-color: #13395674 !important;
+  background-image: linear-gradient(to right, #133956d6, #28b485c6);
 }
 
 .sticky a,
@@ -72,6 +97,7 @@ h5 {
   color: #ffffffe1 !important;
 }
 
+/* ******** OVERLAY ******** */
 .overlay {
   position: absolute;
   height: 100%;
@@ -81,26 +107,13 @@ h5 {
   z-index: 9;
 }
 
-#primary_nav {
-  top: 0px;
-  position: fixed;
-  display: block;
-  left: -170px;
-  width: 170px;
-  height: 100vh;
-  background: #02030354;
-  border-right: 1px solid #fff;
-  z-index: 10;
-  transition: 400ms;
-}
-
-/********** MENU BUTTON **********/
+/********** MENU BUTTON (HAMBURGER)**********/
 .menu-btn {
   display: none;
   position: absolute;
   z-index: 999;
   left: 35px;
-  top: 20px;
+  top: 10px;
   cursor: pointer;
   opacity: 1000;
   transition: all 0.5s ease-out;
@@ -110,7 +123,7 @@ h5 {
   width: 33px;
   height: 3px;
   margin: 0 0 8px 0;
-  background: #133956;
+  background-color: #161c1c;
   transition: all 0.5s ease-out;
 }
 
@@ -127,8 +140,21 @@ h5 {
   transform: rotate(-45deg) translate(7px, -2px);
 }
 
-/********* SIDE BAR NAV **************/
-/********* SIDE BAR NAV **************/
+/* ******** PRIMARY NAV (SIDE NAV) ******** */
+
+#primary_nav {
+  top: 0px;
+  position: fixed;
+  display: block;
+  left: -170px;
+  width: 170px;
+  height: 100vh;
+  background: #02030354;
+  border-right: 1px solid #fff;
+  z-index: 10;
+  transition: 400ms;
+}
+
 #primary_nav ul {
   display: block;
   padding-left: 5px;
@@ -145,7 +171,7 @@ h5 {
   margin-left: 10px;
   top: 40px;
   left: 20px;
-  font-size: 25px;
+  font-size: 2.5rem;
 }
 #logo a {
   color: #133956;
@@ -170,7 +196,7 @@ nav ul .fas {
   border-top: 1px solid rgba(255, 255, 255, 0.04);
   border-left: 1px solid rgba(255, 255, 255, 0.04);
   --webkit-transition: all 0.8s;
-  font-size: 20px;
+  font-size: 2rem;
   margin-bottom: 3px;
   padding-left: 0.8em;
   -o-transition: all 0.4s ease-in-out;
@@ -187,7 +213,10 @@ nav ul .fas {
   box-shadow: 9em 0 rgba(0, 0, 0, 0.2) inset;
 }
 
-/****** MAIN DISPLAY NAV *****/
+/*=============================================
+=            MAIN DISPLAY NAV            =
+=============================================*/
+
 #main-display nav {
   border-bottom: 1px #133956c4 solid;
   padding: 10px;
@@ -195,18 +224,23 @@ nav ul .fas {
 }
 
 #nav-display .fa {
-  color: #133956;
+  display: inline-block;
+  background-image: linear-gradient(to right, #133956, #28b485);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 2rem;
 }
 
 #main-display nav ul {
   text-transform: uppercase;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 1.4rem;
   font-family: "Acme", sans-serif;
 }
 #main-display nav ul li a {
   color: #133956;
-  margin-left: 20px;
+  margin-left: 2rem;
 }
 
 #main-display nav ul li a:hover {
@@ -217,14 +251,21 @@ nav ul .fas {
   font-weight: bold;
   color: #133956;
 }
+/*=====  End of MAIN DISPLAY NAV  ======*/
 
-/********* HOME PAGE *********/
+/*=============================================
+=            HOME PAGE            =
+=============================================*/
+
 #home {
   text-align: center;
   border-bottom: 1px #13395635 solid;
 }
-.story{
-    display: relative;
+
+/* HOME PROFILE */
+
+.story {
+  display: relative;
 }
 .story__img {
   max-height: 220px;
@@ -232,43 +273,45 @@ nav ul .fas {
   border: 1px solid #13395644;
 }
 .story__caption {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 20%);
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 19px;
-    text-align: center;
-    opacity: 0;
-    transition: all 500ms;
-    color: #f4f4f4;
-    font-family: "Acme", sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 20%);
+  text-transform: uppercase;
+  font-size: 1.9rem;
+  text-align: center;
+  opacity: 0;
+  transition: all 500ms;
+  color: #f4f4f4;
+  font-family: "Acme", sans-serif;
 }
 
- .story:hover .story__caption {
-    opacity: 1;
-    transform: translate(-50%, -50%); }
+.story:hover .story__caption {
+  opacity: 1;
+  transform: translate(-50%, -50%);
+}
 
 #home h1 {
-  padding: 20px;
+  padding: 2rem;
   font-weight: bold;
 }
 
 #home h2 {
   font-weight: bold;
-
   line-height: 1.1;
 }
 
 .icons .fab {
-  color: #133956;
-  font-size: 22px;
+  color: #14544d;
+  font-size: 2.2rem;
+  transition: all 500ms ease-in-out;
 }
 .icons .fab:hover {
-  color: #133956c4;
+  color: #2c9472;
 }
+
 /* TECH STACK */
+
 .stack {
   display: grid;
   grid-gap: 20px;
@@ -299,10 +342,21 @@ nav ul .fas {
 #homeContact {
   border-top: #33333323 solid 1px;
 }
+/*=====  End of HOME PAGE  ======*/
+
+/*=============================================
+=            PORTFOLIO            =
+=============================================*/
 
 #work img {
-  min-height: 250px;
-  min-width: 240px;
+  display: block;
+  margin-left: 0;
+  margin-right: 0;
+  transition: all 300ms;
+}
+
+#work img:hover {
+  transform: scale(1.07);
 }
 
 #work li {
@@ -313,8 +367,11 @@ nav ul .fas {
 #work .list-group-item {
   background: none;
 }
+/*=====  End of PORTFOLIO  ======*/
 
-/* CONTACT SECTION */
+/*=============================================
+=            CONTACT            =
+=============================================*/
 
 form #alertSuccess,
 form #alertFail {
@@ -326,21 +383,32 @@ form #alertFail {
   width: 100%;
   height: 100px;
 }
+
+.input-group-lg > .form-control,
+.input-group-lg > .input-group-append > .btn,
+.input-group-lg > .input-group-prepend > .input-group-text {
+  padding: 2rem 1.8rem;
+  font-size: 1.7rem;
+}
+
+.form-control {
+  font-size: 1.7rem;
+}
+
+/*=====  End of CONTACT  ======*/
+
 /********** FOOTER **********/
 #main-footer {
-  background: #133956;
+  background-image: linear-gradient(to left, #133956, #28b485);
 }
 
 footer {
-  font-size: 13px;
-}
-footer .btn a,
-footer .btn i {
-  font-size: 13px;
+  font-size: 1.3rem;
 }
 
 /********** SCROLL TOP **********/
 #scroll-top {
+  font-size: 2rem;
   display: none;
   position: fixed;
   bottom: 75px;
@@ -356,11 +424,13 @@ footer .btn i {
   .menu-btn {
     display: block;
   }
+
+  .sticky .menu-btn {
+    top: 20px;
+  }
+
   .navbar-brand {
     margin-left: 50% !important;
-  }
-  #work img {
-    max-width: 350px;
   }
 
   /*BLOG*/
@@ -371,7 +441,7 @@ footer .btn i {
 
 @media (max-width: 550px) {
   #primary_nav ul li {
-    font-size: 16px;
+    font-size: 1.6rem;
   }
   .navbar-brand {
     margin-left: 50% !important;
@@ -388,10 +458,10 @@ footer .btn i {
   #home img {
     margin-right: -10%;
   }
-    
-    .story__caption{
-        margin-left: 25px;
-    }
+
+  .story__caption {
+    margin-left: 25px;
+  }
   .homeInfo {
     margin-left: -10%;
   }
