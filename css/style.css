@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Special+Elite");
 @import url("https://fonts.googleapis.com/css?family=Acme|Anton|Patua+One");
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
 * {
   padding: 0;
   margin: 0;
@@ -10,6 +11,8 @@ html,
 body {
   background-color: #fff;
   font-family: "Source Sans Pro", sans-serif;
+  /* font-family: "Montserrat", sans-serif;
+  line-height: 30px; */
   border-top: 3px solid #133956;
   font-size: 10px;
 }
@@ -65,7 +68,9 @@ h2 {
 .btn-lg {
   font-size: 2rem;
 }
-.bg-dark,
+.bg-dark {
+  background: transparent;
+}
 .btn {
   background-image: linear-gradient(to top, #13395670, #28b485);
 }
@@ -306,10 +311,11 @@ nav ul .fas {
 .icons .fab {
   color: #14544d;
   font-size: 2.2rem;
-  transition: all 500ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 .icons .fab:hover {
   color: #2c9472;
+  transform: scale(1.1);
 }
 
 /* TECH STACK */
@@ -326,18 +332,21 @@ nav ul .fas {
   height: 100px;
   padding: 15px;
   border: 1px solid #133956c4;
-  box-shadow: 2px 3px #6d757dc9;
+  box-shadow: 2px 3px #6d757d62;
   border-radius: 2px;
+  transition: transform 300ms;
 }
 
 .stack img:hover {
   box-shadow: 2px 3px #133956;
+  transform: scale(1.07);
 }
 
 /* HOME CONTACT AND WORK SECTION */
 
 #homeContact a {
   color: #133956c8;
+  font-weight: 500;
 }
 
 /* PORTFOLIO WORK SECTION */
@@ -378,6 +387,10 @@ nav ul .fas {
 form #alertSuccess,
 form #alertFail {
   display: none;
+}
+
+.input-group-prepend i {
+  color: #14544d;
 }
 
 .space {
