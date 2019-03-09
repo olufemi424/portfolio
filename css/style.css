@@ -393,12 +393,6 @@ form #alertFail {
   color: #14544d;
 }
 
-.space {
-  background: #f8f9fa;
-  width: 100%;
-  height: 100px;
-}
-
 .input-group-lg > .form-control,
 .input-group-lg > .input-group-append > .btn,
 .input-group-lg > .input-group-prepend > .input-group-text {
