@@ -98,9 +98,12 @@
       <!-- MAIN NAVIGATION -->
       <nav id="nav-display" class="navbar navbar-expand-md navbar-transparent">
         <div class="container">
-          <a href="index.html" class="navbar-brand ml-4"
-            ><i class="fa fa-home"></i
-          ></a>
+          <a href="index.html" class="nav__link--icon">
+            <svg class="nav__icon">
+              <use href="img/sprite.svg#icon-home"></use>
+            </svg>
+          </a>
+
           <div>
             <div id="mobile_nav" class="menu-btn">
               <div class="btn-line"></div>
@@ -110,7 +113,7 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                  <a href="index.html" class="nav-link">Home</a>
+                  <a href="index.html" class="nav-link active">Home</a>
                 </li>
                 <li class="nav-item">
                   <a href="portfolio.html" class="nav-link">Portfolio</a>
@@ -151,26 +154,41 @@
               <h1 class="animated slideInRight mt-5">Hey, I'm Olu.</h1>
               <h3 class="sm-heading"><span id="typewriter"></span> ...</h3>
 
-              <div class="icons mt-5">
-                <a href="https://codepen.io/olufemi424/" target="_blank"
-                  ><i class="fab fa-codepen mr-3"></i
-                ></a>
+              <div class="icons mt-5 d-flex justify-content-center">
+                <a href="https://codepen.io/olufemi424/" class="icon__link">
+                  <svg class="icon codepen">
+                    <use href="img/sprite.svg#icon-codepen"></use>
+                  </svg>
+                </a>
+
                 <a
                   href="https://www.linkedin.com/in/olufemiafolabi91"
-                  target="_blank"
-                  ><i class="fab fa-linkedin mr-3"></i
-                ></a>
-                <a href="https://instagram.com/olufemiaf" target="_blank"
-                  ><i class="fab fa-instagram mr-3"></i
-                ></a>
-                <a href="https://github.com/olufemi424" target="_blank"
-                  ><i class="fab fa-github mr-3"></i
-                ></a>
+                  class="icon__link"
+                >
+                  <svg class="icon linkedin">
+                    <use href="img/sprite.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+
+                <a
+                  href="https://www.linkedin.com/in/olufemiafolabi91"
+                  class="icon__link"
+                >
+                  <svg class="icon instagram">
+                    <use href="img/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+
+                <a href="https://instagram.com/olufemiaf" class="icon__link">
+                  <svg class="icon github">
+                    <use href="img/sprite.svg#icon-github"></use>
+                  </svg>
+                </a>
               </div>
             </div>
           </div>
 
-          <h2 class=" py-5 py-5"><strong>About me</strong></h2>
+          <h2 class="mt-5 py-5"><strong>About me</strong></h2>
           <div class="animated slideInLeft">
             <p>
               I am a self taught web developer, currently a student at
@@ -403,15 +421,19 @@
       </section>
 
       <!-- FOOTER -->
-      <footer id="main-footer" class="text-light">
+      <footer id="main-footer" class="text-dark">
         <div class="container">
           <div class="row py-3">
             <div class="col-sm-6 text-center">
               <a
                 href="/download/Olufemi Afolabi Resume.docx"
-                class="btn text-light btn-sm"
+                class="btn btn-dark btn-sm"
                 download="Olufemi Afolabi Resume"
-                ><i class="fas fa-cloud"></i> Download Resume</a
+              >
+                <svg class="icon github">
+                  <use href="img/sprite.svg#icon-github"></use>
+                </svg>
+                Download Resume</a
               >
             </div>
 

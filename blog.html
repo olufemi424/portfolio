@@ -48,14 +48,14 @@
             >
           </a>
         </li>
-        <li>
+        <li class="active-link">
           <a href="blog.html">
             <i class="fas fa-envelope d-block text-dark ml-2">
               <span>Blog</span>
             </i>
           </a>
         </li>
-        <li class="active-link">
+        <li>
           <a href="contact.html">
             <i class="fas fa-graduation-cap d-block text-dark ml-2">
               <span>Contact</span></i
@@ -101,8 +101,10 @@
         class="navbar navbar-expand-md justify-content-between navbar-transparent"
       >
         <div class="container">
-          <a href="index.html" class="navbar-brand ml-4">
-            <i class="fa fa-home"></i>
+          <a href="index.html" class="nav__link">
+            <svg class="nav__icon">
+              <use href="img/sprite.svg#icon-home"></use>
+            </svg>
           </a>
           <div>
             <div id="mobile_nav" class="menu-btn">
@@ -119,10 +121,15 @@
                   <a href="portfolio.html" class="nav-link">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                  <a href="blog.html" class="nav-link">Blog</a>
+                  <a
+                    href="blog.html"
+                    class="nav-link active
+                  "
+                    >Blog</a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a href="contact.html" class="nav-link active">Contact</a>
+                  <a href="contact.html" class="nav-link ">Contact</a>
                 </li>
               </ul>
             </div>

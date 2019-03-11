@@ -5,8 +5,14 @@
 
 :root {
   --color-primary: #133956;
-  --color-primary-light: #28b485;
+  --color-primary-light: #40ff9b;
   --color-primary-dark: #042117;
+
+  --color-secondary: #299c7a;
+
+  /* --color-primary: #29dfff; */
+  /* --color-primary-light: #28b485; */
+  /*--color-primary-dark: #042117; */
 
   --color-grey-light-1: #faf9f9;
   --color-grey-light-2: #f4f2f2;
@@ -97,21 +103,29 @@ h2 {
 .btn {
   font-size: 1.4rem;
   border-radius: 10px;
-  background-color: var(--color-primary-light);
+  background-color: var(--color-primary);
+  transform: translateY(0);
+  transition: all 0.3s ease-in;
 }
-.btn-sm {
-  font-size: 1.3rem;
-}
+
 .btn-lg {
   font-size: 2rem;
-}
-.bg-dark {
-  background: transparent;
 }
 
 .btn:hover {
   box-shadow: 0.4rem 0.4rem 2rem rgba(0, 0, 0, 0.3);
-  background-color: var(--color-primary);
+  background-color: var(--color-primary-light);
+  color: var(--color-primary);
+  transform: translateY(-3px);
+}
+
+.btn:active {
+  box-shadow: 0.4rem 0.4rem 2rem rgba(0, 0, 0, 0.3);
+  transform: translateY(0);
+}
+
+.active {
+  color: var(--color-secondary) !important;
 }
 
 /* ******** MAIN PAGE ******** */
@@ -135,16 +149,21 @@ h2 {
   right: 0;
   z-index: 10;
   height: 6.4rem;
-  background-image: linear-gradient(
-    to right,
-    var(--color-primary),
-    var(--color-primary-light)
-  );
+  background-color: transparent !important;
+  background-image: linear-gradient(to right, #133956d4, #31bc74db);
 }
 
 .sticky a,
-.sticky .fa {
-  color: var(--color-grey-light-1) !important;
+.sticky .nav__icon {
+  fill: var(--color-primary-light) !important;
+}
+
+.sticky .active {
+  color: var(--color-primary-light) !important;
+}
+
+.sticky .btn-line {
+  background-color: var(--color-primary-light) !important;
 }
 
 /* ******** OVERLAY ******** */
@@ -268,22 +287,22 @@ nav ul .fas {
 =============================================*/
 
 #main-display nav {
-  border-bottom: 1px #133956c4 solid;
+  -webkit-box-shadow: 0 8px 6px -6px var(--color-grey-dark-3);
+  -moz-box-shadow: 0 8px 6px -6px var(--color-grey-dark-3);
+  box-shadow: 0 8px 6px -8px var(--color-grey-dark-3);
   padding: 1rem;
-  background-color: rgba(0, 0, 0, 0.057);
+  background-color: var(--color-grey-light-1);
 }
 
-#nav-display .fa {
-  display: inline-block;
-  background-image: linear-gradient(
-    to right,
-    var(--color-primary),
-    var(--color-primary-light)
-  );
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  font-size: 2rem;
+.nav__icon {
+  height: 2rem;
+  width: 2rem;
+  fill: var(--color-primary);
+  transition: all 0.3s;
+}
+
+.nav__icon:hover {
+  fill: var(--color-grey-dark-2);
 }
 
 #main-display nav ul {
@@ -298,7 +317,7 @@ nav ul .fas {
 }
 
 #main-display nav ul li a:hover {
-  color: #133956c4;
+  color: var(--color-grey-dark-2);
 }
 
 #main-display nav ul li a.active {
@@ -316,11 +335,11 @@ nav ul .fas {
   border-bottom: 1px #13395635 solid;
   background: linear-gradient(
     to top left,
-    #28b4855a,
+    #40ff9c33,
     transparent,
     transparent,
     transparent,
-    #28b48590
+    #40ff9c33
   );
   background-size: cover;
   background-repeat: no-repeat;
@@ -347,6 +366,9 @@ nav ul .fas {
   opacity: 0;
   transition: all 500ms;
   color: #f4f4f4;
+  border-radius: 4px;
+  padding: 0 1rem;
+  background-color: #13395666;
   font-family: "Acme", sans-serif;
 }
 
@@ -365,14 +387,35 @@ nav ul .fas {
   line-height: 1.1;
 }
 
-.icons .fab {
-  color: #14544d;
-  font-size: 2.2rem;
+.icons .icon__link {
+  margin-right: 1.5rem;
+}
+
+.icons .icon {
+  height: 2.2rem;
+  width: 2.2rem;
+
   transition: all 300ms ease-in-out;
 }
-.icons .fab:hover {
-  color: #2c9472;
+
+.icons .icon:hover {
   transform: scale(1.1);
+}
+
+.codepen {
+  fill: currentColor;
+}
+
+.instagram {
+  fill: #d10968;
+}
+
+.linkedin {
+  fill: #0177b5;
+}
+
+.github {
+  fill: #23292d;
 }
 
 /* TECH STACK */
@@ -382,7 +425,7 @@ nav ul .fas {
     to right bottom,
     transparent,
     transparent,
-    #28b4855a,
+    #40ff9c33,
     transparent,
     transparent
   );
@@ -423,11 +466,11 @@ nav ul .fas {
 #homeContact {
   background: linear-gradient(
     to right bottom,
-    #28b4855a,
+    #40ff9c33,
     transparent,
     transparent,
     transparent,
-    #28b48590
+    #40ff9c33
   );
   background-size: cover;
   background-repeat: no-repeat;
@@ -504,7 +547,25 @@ form #alertFail {
 
 /********** FOOTER **********/
 #main-footer {
-  background-image: linear-gradient(to left, #133956, #28b485);
+  /* background-image: linear-gradient(
+    to left,
+    var(--color-primary),
+    var(--color-primary-light)
+  ); */
+  box-shadow: 0 2px 8px #888;
+  -moz-box-shadow: 0 2px 8px #888;
+  -webkit-box-shadow: 0 2px 8px #888;
+  color: var(--color-grey-light-1);
+}
+
+#main-footer .github {
+  height: 1.5rem;
+  width: 1.5rem;
+  fill: var(--color-primary-light);
+}
+
+#main-footer .btn:hover .github {
+  fill: var(--color-primary);
 }
 
 footer {

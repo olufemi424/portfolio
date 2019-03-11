@@ -102,9 +102,11 @@
         class="navbar navbar-expand-sm justify-content-between navbar-transparent"
       >
         <div class="container">
-          <a href="index.html" class="navbar-brand ml-4"
-            ><i class="fa fa-home"></i
-          ></a>
+          <a href="index.html" class="nav__link">
+            <svg class="nav__icon">
+              <use href="img/sprite.svg#icon-home"></use>
+            </svg>
+          </a>
           <div>
             <div id="mobile_nav" class="menu-btn">
               <div class="btn-line"></div>
@@ -117,13 +119,13 @@
                   <a href="index.html" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a href="portfolio.html" class="nav-link">Portfolio</a>
+                  <a href="portfolio.html" class="nav-link active">Portfolio</a>
                 </li>
                 <li class="nav-item">
                   <a href="blog.html" class="nav-link">Blog</a>
                 </li>
                 <li class="nav-item">
-                  <a href="contact.html" class="nav-link active">Contact</a>
+                  <a href="contact.html" class="nav-link">Contact</a>
                 </li>
               </ul>
             </div>
@@ -332,7 +334,7 @@
       </section>
 
       <!-- FOOTER -->
-      <footer id="main-footer" class="text-light">
+      <footer id="main-footer" class="text-dark">
         <div class="container">
           <div class="row py-3">
             <div class="col-sm-6 text-center">
