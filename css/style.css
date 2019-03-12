@@ -292,6 +292,7 @@ nav ul .fas {
   box-shadow: 0 8px 6px -8px var(--color-grey-dark-3);
   padding: 1rem;
   background-color: var(--color-grey-light-1);
+  min-height: 7rem;
 }
 
 .nav__icon {
@@ -595,8 +596,13 @@ footer {
     display: none;
   }
 
-  .sticky .menu-btn {
-    top: 20px;
+  .sticky .menu-btn,
+  .menu-btn {
+    top: 2.3rem;
+  }
+
+  .nav__link--icon {
+    margin: 0 auto;
   }
 
   .navbar-brand {
