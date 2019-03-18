@@ -453,7 +453,7 @@ nav ul .fas {
 
 .stack img:hover {
   box-shadow: 0.4rem 0.4rem 2rem rgba(0, 0, 0, 0.3);
-  transform: scale(1.07);
+  transform: scale(1.02);
 }
 
 /* HOME CONTACT AND WORK SECTION */
@@ -518,30 +518,16 @@ nav ul .fas {
 =            CONTACT            =
 =============================================*/
 
-form #alertSuccess,
-form #alertFail {
-  display: none;
-}
-
-.input-group-prepend i {
-  color: #14544d;
+#contact .btn {
+  padding: 1rem;
+  margin: 3rem auto;
+  width: 50%;
 }
 
 .space {
   background: #f8f9fa;
   width: 100%;
   height: 100px;
-}
-
-.input-group-lg > .form-control,
-.input-group-lg > .input-group-append > .btn,
-.input-group-lg > .input-group-prepend > .input-group-text {
-  padding: 2rem 1.8rem;
-  font-size: 1.7rem;
-}
-
-.form-control {
-  font-size: 1.7rem;
 }
 
 /*=====  End of CONTACT  ======*/
