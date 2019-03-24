@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="google-site-verification"
+      content="MAmU0oYEyhANaWKVIPMH6O9feU0xQdCbkCb5nTyWTm0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Olufemi Afolabi</title>
+  </head>
+
+  <body data-spy="srcoll" data-target="#main-navigation">
+    <!-- SIDE NAVBAR -->
+    <nav id="primary_nav" class="bg-light">
+      <div id="logo">
+        <a href="index.html" class="text-dark"> <i class="fa fa-home"></i></a>
+      </div>
+      <ul class="menu">
+        <li>
+          <a href="index.html">
+            <i class="fas fa-home d-block text-dark ml-2"> <span>Home</span></i>
+          </a>
+        </li>
+        <li>
+          <a href="portfolio.html">
+            <i class="fas fa-graduation-cap d-block text-dark">
+              <span>Portfolio</span></i
+            >
+          </a>
+        </li>
+        <li>
+          <a href="blog.html">
+            <i class="fas fa-envelope d-block text-dark ml-2">
+              <span>Blog</span>
+            </i>
+          </a>
+        </li>
+        <li class="active-link">
+          <a href="contact.html">
+            <i class="fas fa-graduation-cap d-block text-dark ml-2">
+              <span>Contact</span></i
+            >
+          </a>
+        </li>
+      </ul>
+
+      <ul class="text-center">
+        <li>
+          <a
+            class="text-dark x"
+            href="https://codepen.io/olufemi424/"
+            target="_blank"
+            ><i class="fab fa-codepen fa-2x"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            class="text-dark x"
+            href="https://www.linkedin.com/in/olufemiafolabi91"
+            target="_blank"
+            ><i class="fab fa-linkedin fa-2x"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            class="text-dark x"
+            href="https://github.com/olufemi424"
+            target="_blank"
+            ><i class="fab fa-github fa-2x"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- MAIN HEADER DISPLAY -->
+    <div id="main-display" class="bg-img">
+      <div id="overlay"></div>
+      <!-- MAIN NAVIGATION -->
+      <nav
+        id="nav-display"
+        class="navbar navbar-expand-md justify-content-between navbar-transparent"
+      >
+        <div class="container">
+          <a href="index.html" class="navbar-brand ml-4">
+            <i class="fa fa-home"></i>
+          </a>
+          <div>
+            <div id="mobile_nav" class="menu-btn">
+              <div class="btn-line"></div>
+              <div class="btn-line"></div>
+              <div class="btn-line"></div>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="portfolio.html" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a href="blog.html" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a href="contact.html" class="nav-link active">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- BODY STARTS HERE -->
+
+      <!-- CONTACT SECTION -->
+      <section id="contact" class="py-5 bg-light">
+        <div class="container">
+          <div class="row text-center mt-4">
+            <div class="col mb-5">
+              <h1 class="mb-4">Contact</h1>
+              <h3 class="py-4">I'd love To Hear From You!</h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-9 mx-auto">
+              <div class="card card-body text-center p-5 animated fadeInUp">
+                <!-- <form id="contactForm">
+                  <div
+                    id="alertSuccess"
+                    class="alert alert-success"
+                    role="alert"
+                  >
+                    Your message has been sent
+                  </div>
+                  <div id="alertFail" class="alert alert-danger" role="alert">
+                    Pls Enter a Valid Email
+                  </div>
+                  <div class="form-group">
+                    <div class="input-group input-group-lg">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text">
+                          <i class="fas fa-user"></i>
+                        </span>
+                      </div>
+                      <input
+                        name="name"
+                        id="name"
+                        type="text"
+                        class="form-control bg-light text-dark"
+                        placeholder="Name"
+                        required
+                      />
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <div class="input-group input-group-lg">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text">
+                          <i class="fas fa-envelope"></i>
+                        </span>
+                      </div>
+                      <input
+                        name="email"
+                        id="email"
+                        type="text"
+                        class="form-control bg-light text-dark"
+                        placeholder="Email"
+                      />
+                    </div>
+                  </div>
+                  <div class="md-form pb-5">
+                    <textarea
+                      class="form-control bg-light md-textarea text-dark"
+                      id="message"
+                      placeholder="Pls type message here..."
+                      rows="5"
+                    ></textarea>
+                  </div>
+                  <input
+                    type="submit"
+                    value="Submit"
+                    class="btn bg-dark text-white btn-lg btn-block"
+                  />
+                </form> -->
+              </div>
+              <div class="icons mt-5 text-center">
+                <a href="https://codepen.io/olufemi424/" target="_blank"
+                  ><i class="fab fa-codepen mr-3"></i
+                ></a>
+                <a
+                  href="https://www.linkedin.com/in/olufemiafolabi91"
+                  target="_blank"
+                  ><i class="fab fa-linkedin mr-3"></i
+                ></a>
+                <a href="https://instagram.com/olufemiaf" target="_blank"
+                  ><i class="fab fa-instagram mr-3"></i
+                ></a>
+                <a href="https://github.com/olufemi424" target="_blank"
+                  ><i class="fab fa-github mr-3"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FOOTER -->
+      <footer id="main-footer" class="text-light mt-5">
+        <div class="container py-3 text-center">
+          Copyright &copy; Olufemi Afolabi ❤️ All rights reserved.
+          <span id="year"></span>
+        </div>
+      </footer>
+    </div>
+    <script
+      src="http://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+      integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.9/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.9/firebase-database.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+  </body>
+</html>
