@@ -9,11 +9,16 @@
   </head>
 
   <body>
+    <!-- NAVIGATION  -->
     <header class="header">
       <nav class="nav">
         <div class="nav__items">
           <div class="logo">
-            <a href="#home" class="logo__icon">Olu</a>
+            <a href="#home" class="logo__icon">
+              <svg class="portfolio__social--icon home-icon">
+                <use href="img/sprite.svg#icon-home1"></use>
+              </svg>
+            </a>
           </div>
           <ul class="menu">
             <li class="menu__item">
@@ -40,19 +45,20 @@
       </div>
     </header>
 
+    <!-- BODY STARTS HERE -->
     <main class="content">
+      <!-- LANDING PAGE -->
       <section id="landing">
         <div class="container">
           <div class="portfolio">
-            <figure class="portfolio__story">
-              <img
-                class="portfolio__story__img"
-                src="img/32627516.jpg"
-                alt="Olufemi Afolabi"
-              />
-              <div class="portfolio__story__caption">
-                Olufemi Afolabi
-              </div>
+            <div class="portfolio__info">
+              <h1 class="portfolio__info__heading">Hey, I'm Olu.</h1>
+              <h3
+                class="portfolio__info__heading--sub portfolio__info__typewriter"
+              >
+                <span id="typewriter"></span> I'm a Web Developer, Programmer,
+                Designer, 'n Entrepreneur....
+              </h3>
 
               <div class="portfolio__social">
                 <a
@@ -83,7 +89,7 @@
                 </a>
 
                 <a
-                  href="https://instagram.com/olufemiaf"
+                  href="https://github.com/olufemi424"
                   class="portfolio__social--icon"
                 >
                   <svg class="portfolio__social--icon github">
@@ -91,52 +97,64 @@
                   </svg>
                 </a>
               </div>
-            </figure>
-            <div class="portfolio__info">
-              <h1 class="portfolio__info__heading">Hey, I'm Olu.</h1>
-              <h3
-                class="portfolio__info__heading--sub portfolio__info__typewriter"
-              >
-                <span id="typewriter"></span> I'm a Web Developer, Programmer,
-                Designer, 'n Entrepreneur....
-              </h3>
 
               <div class="portfolio__info__cta">
                 <button class="portfolio__info__cta__btn">
-                  Check Out my Portfolio
+                  Portfolio
                 </button>
+              </div>
+
+              <div class="landing__mouse">
+                <div class="mouse"></div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
+      <!-- ABOUT ME SECTION -->
       <section id="about" class="about">
         <div class="container">
           <h2 class="about__title heading__primary">About me</h2>
           <div class="about__body">
-            <p class="paragraph">
-              I am a self taught web developer, currently a student at
-              <strong class="text-lead">Saint Xavier University</strong>,
-              working on my MS in
-              <strong class="text-lead">Applied Computer Science</strong>
-              (Graduating December, 2019).
-            </p>
-            <p class="paragraph">
-              Extensive knowledge of web applications and software development.
-              Possessing the ability to learn fast, take initiative, prioritize
-              multiple tasks in a fast pace working environment.
-            </p>
+            <figure class="portfolio__story">
+              <img
+                class="portfolio__story__img"
+                src="img/32627516.jpg"
+                alt="Olufemi Afolabi"
+              />
+              <div class="portfolio__story__caption">
+                Olufemi Afolabi
+              </div>
+            </figure>
+            <div class="about__paragraph">
+              <p class="paragraph">
+                I am a self taught web developer, currently a student at
+                <strong class="text-lead">Saint Xavier University</strong>,
+                working on my MS in
+                <strong class="text-lead">Applied Computer Science</strong>
+                (Graduating December, 2019).
+              </p>
+              <br />
+              <p class="paragraph">
+                Extensive knowledge of web applications and software
+                development. Possessing the ability to learn fast, take
+                initiative, prioritize multiple tasks in a fast pace working
+                environment.
+              </p>
+              <br />
 
-            <p class="paragraph">
-              If I'm not working on a computer you can find me relieving stress
-              by cooking, watching soccer highlights or playing video
-              games(soccer), and most importantly spending time with family.
-            </p>
+              <p class="paragraph">
+                If I'm not working on a computer you can find me relieving
+                stress by cooking, watching soccer highlights or playing video
+                games(soccer), and most importantly spending time with family.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
+      <!-- TECH STACK -->
       <section class="stack">
         <div class="container">
           <h2 class="stack__title heading__primary">
@@ -159,19 +177,316 @@
         </div>
       </section>
 
+      <!-- MY WORK -->
+      <section class="work">
+        <div class="container">
+          <h2 class="work__title heading__primary">
+            <strong>Portfolio</strong>
+          </h2>
+
+          <div class="work__header">
+            <h3 class="work__header__title--sub">
+              <strong>Check Out My Projects.</strong>
+            </h3>
+            <p class="paragraph--center">
+              Here you will find some of my personal projects, and also the ones
+              I'm working on. Each of this projects are ideas I have, which I'm
+              constantly improving with newly aquired skills.
+            </p>
+          </div>
+
+          <!-- ITEM ZERO -->
+          <div class="project">
+            <div class="project__image--box">
+              <img
+                src="img/project-img/friendconnet.png"
+                alt="Photo"
+                class="project__image"
+              />
+            </div>
+            <div class="project__details--box">
+              <h2 class="project__details__title">
+                DevFConnect
+              </h2>
+              <h4 class="project__details__title--sub">
+                MERN Stack Application
+              </h4>
+              <p class="project__details__paragraph">
+                Currently working on DevFConnect, which is a social media
+                application, where developers can create an account, and connect
+                with other developers. The idea of this app is to provide a
+                platform where developers can make friends with other
+                developers.
+              </p>
+
+              <ul class="project__details__list paragraph--small">
+                <li class="project__details__list--item">HTML</li>
+                <li class="project__details__list--item">CSS</li>
+                <li class="project__details__list--item">SASS</li>
+                <li class="project__details__list--item">Javascript</li>
+                <li class="project__details__list--item">React</li>
+                <li class="project__details__list--item">React Redux</li>
+                <li class="project__details__list--item">Passport</li>
+                <li class="project__details__list--item">JWT Token</li>
+                <li class="project__details__list--item">MongoDb</li>
+                <li class="project__details__list--item">Mongoose</li>
+              </ul>
+
+              <div class="project__button">
+                <svg class="project__button__icon github">
+                  <use href="img/sprite.svg#icon-github"></use>
+                </svg>
+                <a
+                  href="https://github.com/olufemi424/friendConnect"
+                  target="_blank"
+                  class="project__button--link"
+                >
+                  Github</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- ITEM ONE -->
+          <div class="project">
+            <div class="project__details--box">
+              <h2 class="project__details__title">
+                Moviedb
+              </h2>
+              <h4 class="project__details__title--sub">
+                Moviedb API React App
+              </h4>
+              <p class="project__details__paragraph">
+                The idea of Moviedb app, is to create a platform where the app
+                users can check recent movies or shows and also, see what is
+                trending with regards to movies or shows. Users can see details
+                about each movie/show and also search for their movie of choice.
+                New features will be added such as movie thrillers and movie
+                suggestions based on what movie you are checking its details.
+              </p>
+
+              <ul class="project__details__list paragraph--small">
+                <li class="project__details__list--item">HTML</li>
+                <li class="project__details__list--item">CSS</li>
+                <li class="project__details__list--item">SASS</li>
+                <li class="project__details__list--item">Javascript</li>
+                <li class="project__details__list--item">React</li>
+                <li class="project__details__list--item">React Redux</li>
+                <li class="project__details__list--item">JSX</li>
+                <li class="project__details__list--item">
+                  React-Styled-Component
+                </li>
+              </ul>
+
+              <div class="project__button">
+                <svg class="project__button__icon github">
+                  <use href="img/sprite.svg#icon-github"></use>
+                </svg>
+                <a
+                  href="https://github.com/olufemi424/movie-database"
+                  target="_blank"
+                  class="project__button--link"
+                >
+                  Github</a
+                >
+              </div>
+              <div class="project__button">
+                <svg class="project__button__icon github">
+                  <use href="img/sprite.svg#icon-github"></use>
+                </svg>
+                <a
+                  href="https://olufemi-moviedb.herokuapp.com/"
+                  target="_blank"
+                  class="project__button--link"
+                >
+                  Visit</a
+                >
+              </div>
+            </div>
+            <div class="project__image--box">
+              <img
+                src="img/project-img/moviedb.png"
+                alt="Photo"
+                class="project__image"
+              />
+            </div>
+          </div>
+
+          <!-- ITEM TWO -->
+          <div class="project">
+            <div class="project__image--box">
+              <img
+                src="img/project-img/lyrica.png"
+                alt="Photo"
+                class="project__image"
+              />
+            </div>
+            <div class="project__details--box">
+              <h2 class="project__details__title">
+                Lyrica lyrics App
+              </h2>
+              <h4 class="project__details__title--sub">
+                Lyrics finder app with Firebase-Auth, React
+              </h4>
+
+              <ul class="project__details__list paragraph--small">
+                <li class="project__details__list--item">HTML</li>
+                <li class="project__details__list--item">CSS</li>
+                <li class="project__details__list--item">Javascript</li>
+                <li class="project__details__list--item">React</li>
+                <li class="project__details__list--item">React Redux</li>
+                <li class="project__details__list--item">JSX</li>
+                <li class="project__details__list--item">Firebase</li>
+                <li class="project__details__list--item">Firestore</li>
+                <li class="project__details__list--item">
+                  React-Styled-Component
+                </li>
+              </ul>
+
+              <div class="project__button">
+                <svg class="project__button__icon github">
+                  <use href="img/sprite.svg#icon-github"></use>
+                </svg>
+                <a
+                  href="https://github.com/olufemi424/lyricsApp"
+                  target="_blank"
+                  class="project__button--link"
+                >
+                  Github</a
+                >
+              </div>
+              <div class="project__button">
+                <svg class="project__button__icon github">
+                  <use href="img/sprite.svg#icon-github"></use>
+                </svg>
+                <a
+                  href="https://lyricsappfirebaseauth.herokuapp.com/"
+                  target="_blank"
+                  class="project__button--link"
+                >
+                  Visit</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- ITEM THREE -->
+          <div class="project">
+            <div class="project__details--box">
+              <h2 class="project__details__title">
+                Shopwise Inc Theme
+              </h2>
+              <h4 class="project__details__title--sub">
+                Bootstrap Theme
+              </h4>
+
+              <ul class="project__details__list paragraph--small">
+                <li class="project__details__list--item">HTML</li>
+                <li class="project__details__list--item">Bootstrap</li>
+              </ul>
+
+              <div class="project__button">
+                <svg class="project__button__icon github">
+                  <use href="img/sprite.svg#icon-github"></use>
+                </svg>
+                <a
+                  href="https://github.com/olufemi424/car-sale-template"
+                  target="_blank"
+                  class="project__button--link"
+                >
+                  Github</a
+                >
+              </div>
+              <div class="project__button">
+                <svg class="project__button__icon github">
+                  <use href="img/sprite.svg#icon-github"></use>
+                </svg>
+                <a
+                  href="https://olufemi424.github.io/car-sale-template/"
+                  target="_blank"
+                  class="project__button--link"
+                >
+                  Visit</a
+                >
+              </div>
+            </div>
+            <div class="project__image--box">
+              <img
+                src="img/project-img/shopwiseinc.png"
+                alt="Photo"
+                class="project__image"
+              />
+            </div>
+          </div>
+          
+           <!-- ITEM THREE -->
+           <div class="project">
+              <div class="project__image--box">
+                  <img
+                    src="img/project-img/pig-game.png"
+                    alt="Photo"
+                    class="project__image"
+                  />
+                </div>
+              <div class="project__details--box">
+                <h2 class="project__details__title">
+                    Pig Game
+                </h2>
+                <h4 class="project__details__title--sub">
+                    Pure Javascript game
+                </h4>
+  
+                <ul class="project__details__list paragraph--small">
+                  <li class="project__details__list--item">HTML</li>
+                  <li class="project__details__list--item">CSS</li>
+                  <li class="project__details__list--item">Javascript</li>
+                </ul>
+  
+                <div class="project__button">
+                  <svg class="project__button__icon github">
+                    <use href="img/sprite.svg#icon-github"></use>
+                  </svg>
+                  <a
+                  href="https://github.com/olufemi424/dice-game"
+                    target="_blank"
+                    class="project__button--link"
+                  >
+                    Github</a
+                  >
+                </div>
+                <div class="project__button">
+                  <svg class="project__button__icon github">
+                    <use href="img/sprite.svg#icon-github"></use>
+                  </svg>
+                  <a
+                  href="https://olufemi424.github.io/dice-game/"
+                    target="_blank"
+                    class="project__button--link"
+                  >
+                    Visit</a
+                  >
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
       <section class="contact">
         <div class="container">
           <h2 class="contact__title heading__primary">
-            <strong>My work &amp; contact</strong>
+            <strong>Contact</strong>
           </h2>
-          <p class="paragraph">
+          <p class="paragraph--center">
             You can find out more about my personal projects and what i am
-            working on in my
+            working in my
             <a class="text-lead" href="portfolio.html">portfolio</a>. Please do
             not hesitate to reach out if you would like to discuss your project
             / job opportunity.
           </p>
-          <p class="paragraph">
+          <p class="paragraph--center">
             The best way to
             <a class="text-lead" href="contact.html">contact</a> me is via my
             <a class="text-lead" href="https://www.instagram.com/olufemiaf/"
@@ -180,12 +495,62 @@
             or by sending me an
             <a class="text-lead" href="mailto:olufemiaf@gmail.com">email</a>.
           </p>
-          <p class="text-lead-sub" class="text-muted pt-4">
+          <br />
+          <p class="paragraph--center">
+            Interested in a partnership? Want to discuss a freelance
+            opportunity? I'd be so happy to speak with you
+          </p>
+
+          <div class="portfolio__info__cta">
+            <a
+              href="mailto:olufemiaf@gmail.com"
+              class="portfolio__info__cta__btn"
+              >Reach Out To Me</a
+            >
+          </div>
+          <p class="text-lead-sub">
             <q
               >The things you're passionate about are not random. <br />
               They are your calling.</q
             >
           </p>
+        </div>
+        <div class="portfolio__social">
+          <a
+            href="https://codepen.io/olufemi424/"
+            class="portfolio__social--link"
+          >
+            <svg class="portfolio__social--icon codepen">
+              <use href="img/sprite.svg#icon-codepen"></use>
+            </svg>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/olufemiafolabi91"
+            class="portfolio__social--link"
+          >
+            <svg class="portfolio__social--icon linkedin">
+              <use href="img/sprite.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/olufemiafolabi91"
+            class="portfolio__social--link"
+          >
+            <svg class="portfolio__social--icon instagram">
+              <use href="img/sprite.svg#icon-instagram"></use>
+            </svg>
+          </a>
+
+          <a
+            href="https://github.com/olufemi424"
+            class="portfolio__social--icon"
+          >
+            <svg class="portfolio__social--icon github">
+              <use href="img/sprite.svg#icon-github"></use>
+            </svg>
+          </a>
         </div>
       </section>
     </main>
@@ -194,10 +559,10 @@
       <div class="footer__button">
         <a
           href="/download/Olufemi Afolabi Resume.pdf"
-          class="btn btn-dark btn-sm"
+          class="footer__button--link"
           download="Olufemi Afolabi Resume"
         >
-          <svg class="portfolio__social--icon github">
+          <svg class="footer__button--icon github">
             <use href="img/sprite.svg#icon-github"></use>
           </svg>
           Download Resume</a

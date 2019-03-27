@@ -16,10 +16,13 @@
   --color-grey-dark-3: #999;
 
   --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
-  --shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.07);
+  --shadow-light: 0 1rem 2rem rgba(0, 0, 0, 0.1);
 
   --line: 1px solid var(--color-grey-light-3);
 }
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Acme|Anton|Patua+One");
 
 * {
   margin: 0;
@@ -37,11 +40,13 @@ html {
 }
 
 body {
-  font-family: Lato, sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: var(--color-grey-light-1);
   background-color: var(--color-primary-dark);
+  background-size: cover;
   line-height: 1.6;
   font-weight: 400;
+  height: 100%;
 }
 
 .container {

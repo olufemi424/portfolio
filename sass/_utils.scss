@@ -14,9 +14,16 @@
 }
 
 .paragraph {
-  text-align: center;
   color: var(--color-grey-light-2);
   font-size: 1.7rem;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
+
+  &--center {
+    text-align: center;
+  }
+
+  &--small {
+    font-size: 1.4rem;
+  }
 }
