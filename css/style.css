@@ -113,11 +113,11 @@ body {
 
 @media only screen and (max-width: 600px) {
   .nav {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: -25rem;
     width: 25rem;
-    height: 100vh;
+    height: 100%;
     transition: left 0.3s ease-in-out;
     opacity: 0;
     border-top: 4px solid var(--color-secondary);
@@ -371,20 +371,20 @@ body {
     letter-spacing: 1px; }
   .stack__images {
     display: grid;
-    grid-gap: 4rem;
+    grid-gap: 2.5rem;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     justify-content: center;
     transition: all 1s ease; }
   .stack__img {
-    width: 90%;
-    height: 80px;
-    padding: 10px;
+    width: 100%;
+    height: 10rem;
+    padding: 0.5rem;
+    margin-right: 2rem;
     border: 1px solid var(--color-secondary);
     background-color: var(--color-grey-light-2);
     box-shadow: 2px 3px #00000062;
     border-radius: 3px;
-    transition: transform 300ms;
-    object-fit: cover; }
+    transition: transform 300ms; }
     .stack__img:hover {
       box-shadow: 0.4rem 0.4rem 2rem rgba(0, 0, 0, 0.3);
       transform: scale(1.02); }
@@ -396,14 +396,18 @@ body {
   margin: 3rem 0; }
   .stack__filter :not(:last-child) {
     margin-right: 2rem; }
-  .stack__filter--btn {
+  .stack__filter--header {
+    color: var(--color-secondary); }
+  .stack__filter--btn, .stack__filter--btn:active, .stack__filter--btn:link {
     padding: 0.4rem 1rem;
     font-size: 1.3rem;
     font-family: inherit;
     border-radius: 5px;
     background-color: var(--color-primary);
     border: none;
-    color: var(--color-grey-light-2); }
+    color: var(--color-grey-light-2);
+    cursor: pointer;
+    outline: none; }
 
 .contact {
   margin-top: 10rem;

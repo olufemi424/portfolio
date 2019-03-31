@@ -78,7 +78,6 @@
 // });
 
 import { images } from "./data/data.js";
-console.log(images);
 
 const navTrigger = document.querySelector(".hamburger");
 const headerEl = document.querySelector(".nav");
@@ -98,6 +97,7 @@ const animateHamburgers = () => {
     item.classList.toggle("change");
   }
 };
+
 toggleNav();
 
 //images section
@@ -131,10 +131,7 @@ function init() {
 }
 
 //filter items on click of each category
-// const filterLink = document.querySelectorAll("#filter a");
-
 function imageCategory(event) {
-  console.log(event.target.id);
   let imagesCatergory = [];
   for (let i = 0; i < images.length; i++) {
     if (event.target.id === "all") {
@@ -148,4 +145,7 @@ function imageCategory(event) {
 }
 
 document.addEventListener("DOMContentLoaded", init);
-document.getElementById("filter").addEventListener("click", imageCategory);
+const filterButtonsEl = document.querySelectorAll(".stack__filter--btn");
+filterButtonsEl.forEach(el => {
+  el.addEventListener("click", imageCategory);
+});

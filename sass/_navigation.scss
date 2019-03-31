@@ -64,11 +64,11 @@
 
 @media only screen and (max-width: "600px") {
   .nav {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: -25rem;
     width: 25rem;
-    height: 100vh;
+    height: 100%;
     transition: left 0.3s ease-in-out;
     opacity: 0;
     border-top: 4px solid var(--color-secondary);
