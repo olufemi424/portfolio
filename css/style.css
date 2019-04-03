@@ -19,7 +19,8 @@
 
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  box-sizing: border-box; }
 
 *::before,
 *::after {
@@ -69,7 +70,6 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: var(--color-primary-light);
   width: 100%;
   z-index: 1000; }
   .nav__items {
@@ -121,6 +121,7 @@ body {
     transition: left 0.3s ease-in-out;
     opacity: 0;
     border-top: 4px solid var(--color-secondary);
+    background-color: var(--color-primary-light);
     z-index: 1000; }
   .open {
     left: 0;
@@ -143,6 +144,7 @@ body {
       .nav .menu__item {
         margin: 0;
         width: 100%;
+        border-left: 3px solid var(--color-primary);
         background-color: var(--color-primary-lighter);
         position: relative; }
         .nav .menu__item:not(:last-child) {
@@ -205,19 +207,20 @@ body {
   transform: rotate(-45deg); }
 
 .content {
-  font-size: 1.6rem;
-  padding: 2rem;
-  margin-top: 7rem; }
+  font-size: 1.6rem; }
 
 .shift {
   /* margin-left: 180px; */ }
 
+#home {
+  background-image: linear-gradient(-122deg, rgba(245, 33, 33, 0) 82%, rgba(255, 255, 255, 0.08) 15%), linear-gradient(-108deg, rgba(27, 0, 255, 0) 80%, rgba(255, 255, 255, 0.08) 15%), linear-gradient(-101deg, rgba(255, 33, 33, 0) 79%, rgba(255, 255, 255, 0.08) 15%), radial-gradient(circle, #02203c 0%, #02203c 100%); }
+
 .portfolio {
-  margin-top: 10rem;
+  padding-top: 7rem;
   width: 100%;
   display: flex;
   justify-content: center;
-  height: 70vh; }
+  height: 100vh; }
   .portfolio__story {
     max-width: 25rem;
     max-height: 25rem;
@@ -250,7 +253,8 @@ body {
   .portfolio__info {
     width: 50rem;
     text-align: center;
-    position: relative; }
+    position: relative;
+    padding-top: 8rem; }
     .portfolio__info__heading {
       font-size: 7rem;
       color: var(--color-primary); }
@@ -343,9 +347,7 @@ body {
     top: 4.5rem; } }
 
 .about {
-  margin-top: 10rem;
   padding-bottom: 5rem;
-  border-radius: 0.5rem;
   background: var(--color-primary-light); }
   .about__title {
     margin-bottom: 3rem;
@@ -360,9 +362,7 @@ body {
     flex: 0 0 60%; }
 
 .stack {
-  margin-top: 10rem;
   background-color: var(--color-primary-lighter);
-  border-radius: 0.5rem;
   padding: 3rem 0 10rem 0; }
   .stack__title {
     margin-bottom: 3rem;
@@ -425,7 +425,7 @@ body {
   justify-content: space-around;
   align-items: center;
   height: 6rem;
-  background: var(--color-primary-light); }
+  background: var(--color-primary); }
   .footer__button {
     display: flex;
     align-items: center;
@@ -457,9 +457,7 @@ body {
     color: var(--color-primary-dark); }
 
 .work {
-  margin-top: 10rem;
   padding-bottom: 5rem;
-  border-radius: 0.5rem;
   background: var(--color-primary-light);
   font-size: 1.7rem; }
   .work__title {

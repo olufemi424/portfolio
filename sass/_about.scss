@@ -1,7 +1,5 @@
 .about {
-  margin-top: 10rem;
   padding-bottom: 5rem;
-  border-radius: 0.5rem;
   background: var(--color-primary-light);
 
   &__title {
@@ -23,9 +21,7 @@
 }
 
 .stack {
-  margin-top: 10rem;
   background-color: var(--color-primary-lighter);
-  border-radius: 0.5rem;
   padding: 3rem 0 10rem 0;
 
   &__title {
@@ -115,7 +111,7 @@
   justify-content: space-around;
   align-items: center;
   height: 6rem;
-  background: var(--color-primary-light);
+  background: var(--color-primary);
 
   &__button {
     display: flex;

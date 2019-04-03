@@ -3,7 +3,6 @@
   position: absolute;
   top: 0;
   left: 0;
-  background-color: var(--color-primary-light);
   width: 100%;
   z-index: 1000;
 
@@ -72,6 +71,7 @@
     transition: left 0.3s ease-in-out;
     opacity: 0;
     border-top: 4px solid var(--color-secondary);
+    background-color: var(--color-primary-light);
     z-index: 1000;
   }
 
@@ -106,6 +106,7 @@
       &__item {
         margin: 0;
         width: 100%;
+        border-left: 3px solid var(--color-primary);
         background-color: var(--color-primary-lighter);
         position: relative;
 
