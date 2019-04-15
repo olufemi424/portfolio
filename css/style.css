@@ -509,7 +509,7 @@ body {
     flex-wrap: wrap;
     margin-bottom: 1rem; }
     .project__details__list--item {
-      background-color: var(--color-secondary);
+      background-color: var(--color-primary);
       display: inline;
       padding: 0.4rem 0.5rem;
       border-radius: 0.5rem;
@@ -518,7 +518,7 @@ body {
       .project__details__list--item:not(:last-child) {
         margin-right: 0.7rem; }
   .project__button {
-    background-color: var(--color-primary);
+    background-color: var(--color-secondary);
     display: inline;
     padding: 0.4rem;
     border-radius: 5px;
