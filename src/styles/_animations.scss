@@ -18,15 +18,15 @@
 }
 
 .project__image--box[data-scroll="out"] {
-  transform: scale(0) skew(45deg);
+  transform: scale(0) skew(20deg);
 }
 
 .heading__primary[data-scroll="in"] {
   opacity: 1;
-  transform: translateY(0) rotate(0) scale(1);
+  transform: translateY(0) scale(1);
 }
 
 .heading__primary[data-scroll="out"] {
   opacity: 0;
-  transform: translateY(100%) rotate(180deg) scale(0.5);
+  transform: translateY(100%) scale(0.5);
 }

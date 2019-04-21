@@ -28,82 +28,102 @@ export class TechStack extends Component {
     stackArr: [
       {
         href: JavaScript,
+        name: "JavaScript",
         category: "frontend"
       },
       {
         href: Git,
+        name: "Git",
         category: "versioncontrol"
       },
       {
         href: Html5,
+        name: "Html5",
         category: "frontend"
       },
       {
         href: Jquery,
+        name: "Jquery",
         category: "frontend"
       },
       {
         href: Php,
+        name: "Php",
         category: "backend"
       },
       {
         href: Reactpng,
+        name: "React Js",
         category: "frontend"
       },
       {
         href: firebase,
+        name: "firebase",
         category: "database"
       },
       {
         href: Node,
+        name: " Node JS",
         category: "backend"
       },
       {
         href: mongodb,
+        name: "mongodb",
         category: "backend"
       },
       {
         href: BootStrappng,
+        name: "BootStrap",
         category: "frontend"
       },
       {
         href: Googlanalytics,
+        name: "GoogleAnalytics",
         category: "backend"
       },
       {
         href: Photoshop,
+        name: "Photoshop",
         category: "frontend"
       },
       {
         href: Sketchpng,
+        name: "Sketchpng",
         category: "frontend"
       },
       {
         href: python,
+        name: "python",
         category: "backend"
       },
       {
         href: angular,
+        name: "angular",
         category: "frontend"
       },
       {
         href: css,
+        name: "css",
         category: "frontend"
       },
       {
         href: Vscode,
+        name: "Vscode",
         category: "editor"
       },
       {
         href: Sasspng,
+        name: "sass",
         category: "frontend"
       },
       {
         href: Github,
+        name: "Github",
         category: "versioncontrol"
       },
       {
         href: Aspnet,
+        name: "Asp.net",
         category: "frontend"
       }
     ]
@@ -145,16 +165,18 @@ export class TechStack extends Component {
   render() {
     const stateStack = [...this.state.filterStack];
     const newstateStack = stateStack.map(image => {
+      const { name, href } = image;
       return (
-        <img
-          key={image.href}
-          className="stack__img"
-          data-toggle="tooltip"
-          data-placement="top"
-          title="HTML5"
-          src={image.href}
-          alt="html5"
-        />
+        <div className="stack__main-card" key={href}>
+          <div className="stack__card">
+            <div className="stack__card--front">
+              <img className="stack__img" src={href} alt="" />
+            </div>
+            <div className="stack__card--back">
+              <h5 className="stack__card--name">{name.toUpperCase()}</h5>
+            </div>
+          </div>
+        </div>
       );
     });
     return (

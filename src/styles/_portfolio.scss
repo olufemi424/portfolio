@@ -68,6 +68,12 @@
   &__image {
     max-width: 100%;
     height: auto;
+    transform: scale(1);
+    transition: all 300ms;
+
+    &:hover {
+      transform: scale(1.05);
+    }
 
     @media only screen and (max-width: $bp-medium) {
       padding: 2rem;

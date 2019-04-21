@@ -21,7 +21,6 @@ class Home extends Component {
   componentDidMount() {
     // scrollout
     this.so = ScrollOut();
-    console.log("scrool out working");
   }
   componentWillUnmount() {
     this.so.teardown();
