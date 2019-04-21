@@ -1,10 +1,8 @@
 import React from "react";
+import { Link } from "react-scroll";
 
-//SVG
-import codepen from "../assets/SVG/codepen.svg";
-import github from "../assets/SVG/github.svg";
-import linkedin from "../assets/SVG/linkedin.svg";
-import instagram from "../assets/SVG/instagram.svg";
+//commons
+import SocialLinks from "../commons/SocialLinks";
 
 export default function Contact() {
   return (
@@ -16,18 +14,21 @@ export default function Contact() {
         <p className="paragraph--center">
           You can find out more about my personal projects and what i am working
           in my{" "}
-          <a className="text-lead" href="portfolio.html">
+          <Link
+            style={{ cursor: "pointer" }}
+            className="text-lead"
+            to="portfolio"
+            spy={true}
+            smooth={true}
+            duration={500}
+          >
             portfolio
-          </a>{" "}
+          </Link>{" "}
           . Please do not hesitate to reach out if you would like to discuss
           your project / job opportunity.
         </p>
         <p className="paragraph--center">
-          The best way to{" "}
-          <a className="text-lead" href="contact.html">
-            contact
-          </a>{" "}
-          me is via my{" "}
+          The best way to contact me is via my{" "}
           <a className="text-lead" href="https://www.instagram.com/olufemiaf/">
             instagram
           </a>{" "}
@@ -40,7 +41,7 @@ export default function Contact() {
         <br />
         <p className="paragraph--center">
           Interested in a partnership? Want to discuss a freelance opportunity?
-          I'd be so happy to speak with you
+          Offering a job opportunity? I'd be so happy to speak with you
         </p>
 
         <div className="portfolio__info__cta">
@@ -58,49 +59,7 @@ export default function Contact() {
           </q>
         </p>
       </div>
-      <div className="portfolio__social">
-        <a
-          href="https://codepen.io/olufemi424/"
-          className="portfolio__social--link"
-        >
-          <img
-            className="portfolio__social--icon codepen"
-            alt="icon"
-            src={codepen}
-          />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/olufemiafolabi91"
-          className="portfolio__social--link"
-        >
-          <img
-            className="portfolio__social--icon linkedin"
-            alt="icon"
-            src={linkedin}
-          />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/olufemiafolabi91"
-          className="portfolio__social--link"
-        >
-          <img
-            className="portfolio__social--icon instagram"
-            alt="icon"
-            src={instagram}
-          />
-        </a>
-
-        <a
-          href="https://github.com/olufemi424"
-          className="portfolio__social--icon"
-        >
-          <img
-            className="portfolio__social--icon github"
-            alt="icon"
-            src={github}
-          />
-        </a>
-      </div>
+      <SocialLinks />
     </section>
   );
 }

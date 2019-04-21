@@ -40,7 +40,7 @@ class Header extends Component {
         <nav className={`${collapseNav} ${sticky}`}>
           <div className="nav__items">
             <div className="logo">
-              <a href="#home" className="logo__icon">
+              <a href="http://olufemiaf.com/" className="logo__icon">
                 <img className="" alt="icon" src={home} />
               </a>
             </div>

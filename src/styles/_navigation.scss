@@ -162,11 +162,15 @@
 /**** hamburger icon ****/
 .hamburger {
   position: fixed;
-  top: 2rem;
-  right: 3rem;
+  top: 1rem;
+  right: 1.2rem;
   opacity: 1;
   z-index: 1001;
   display: none;
+
+  background-color: #02203cc4;
+  padding: 1.6rem;
+  border-radius: 50%;
 
   &:hover {
     cursor: pointer;

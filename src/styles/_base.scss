@@ -22,8 +22,17 @@
   --line: 1px solid var(--color-grey-light-3);
 }
 
+//fonts
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 @import url("https://fonts.googleapis.com/css?family=Acme|Anton|Patua+One");
+
+//media queries
+$bp-largest: 75em; //1200px
+$bp-large: 68.75em; //1100px
+$bp-medium: 65.25em; //900px
+$bp-small: 48em; //786px
+$bp-smallest: 31.25em; //500px
+$bp-iphoneX: 26.56em; //425px
 
 * {
   margin: 0;
@@ -39,6 +48,14 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; //1rem =10px, 10px/16px = 62.5%
+
+  @media only screen and (max-width: $bp-small) {
+    font-size: 58%;
+  }
+
+  @media only screen and (max-width: $bp-iphoneX) {
+    font-size: 50%;
+  }
 }
 
 body {
