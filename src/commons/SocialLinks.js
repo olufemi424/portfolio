@@ -36,7 +36,7 @@ export default function SocialLinks() {
       </a>
 
       <a
-        href="https://www.linkedin.com/in/olufemiafolabi91"
+        href="https://www.instagram.com/olufemiaf/"
         className="portfolio__social--link"
         target="_blank"
         rel="noopener noreferrer"
@@ -47,7 +47,6 @@ export default function SocialLinks() {
           src={instagram}
         />
       </a>
-
       <a
         href="https://github.com/olufemi424"
         className="portfolio__social--icon"

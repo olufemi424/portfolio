@@ -3,7 +3,6 @@ import React from "react";
 import friendConnect from "../assets/project-img/friendconnet.png";
 import lyrica from "../assets/project-img/lyrica.png";
 import moviedb from "../assets/project-img/moviedb.png";
-import nutrilise from "../assets/project-img/nutrilise.png";
 import shopwiseinc from "../assets/project-img/shopwiseinc.png";
 import piggame from "../assets/project-img/pig-game.png";
 
@@ -256,46 +255,11 @@ export default function PortfolioWork() {
           </div>
         </div>
 
-        {/* Nutirilise project */}
-        <div className="project">
-          <div className="project__image--box">
-            <img
-              src={nutrilise}
-              alt="ShopWise Inc"
-              className="project__image"
-            />
-          </div>
-          <div className="project__details--box">
-            <h2 className="project__details__title">Nutrilise Website</h2>
-            <h4 className="project__details__title--sub">Nutrituon Website</h4>
-
-            <ul className="project__details__list paragraph--small">
-              <li className="project__details__list--item">HTML</li>
-              <li className="project__details__list--item">Bootstrap</li>
-              <li className="project__details__list--item">CSS</li>
-              <li className="project__details__list--item">Wordpress</li>
-              <li className="project__details__list--item">Elementor Plugin</li>
-            </ul>
-            <div className="project__button">
-              <a
-                href="https://nutrilise.org"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="project__button--link"
-              >
-                <img
-                  src={eye}
-                  alt="github svg"
-                  className="project__button__icon"
-                />{" "}
-                Visit
-              </a>
-            </div>
-          </div>
-        </div>
-
         {/* <!-- ITEM THREE --> */}
         <div className="project">
+          <div className="project__image--box">
+            <img src={piggame} alt="Pig_game" className="project__image" />
+          </div>
           <div className="project__details--box">
             <h2 className="project__details__title">Pig Game</h2>
             <h4 className="project__details__title--sub">
@@ -338,9 +302,6 @@ export default function PortfolioWork() {
                 Visit
               </a>
             </div>
-          </div>
-          <div className="project__image--box">
-            <img src={piggame} alt="Pig_game" className="project__image" />
           </div>
         </div>
       </div>
