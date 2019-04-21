@@ -160,7 +160,7 @@ export class TechStack extends Component {
     return (
       <section className="stack">
         <div className="container">
-          <h2 className="stack__title heading__primary">
+          <h2 className="stack__title heading__primary" data-scroll>
             <strong>Tech Stack, but not limited...</strong>
           </h2>
           <div id="filter" className="stack__filter">

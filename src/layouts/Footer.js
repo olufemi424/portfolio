@@ -1,7 +1,7 @@
 import React from "react";
 import resume from "../assets/download/olufemiafolabi.docx";
 
-const Footer = props => {
+const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer__button">

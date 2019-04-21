@@ -118,6 +118,11 @@
         margin-bottom: 3rem;
       }
 
+      @media only screen and (max-width: $bp-iphoneX) {
+        font-size: 7.5rem;
+        margin-bottom: 3rem;
+      }
+
       &--sub {
         font-size: 2.6rem;
         font-weight: 600;

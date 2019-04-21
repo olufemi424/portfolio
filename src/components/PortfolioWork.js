@@ -14,7 +14,7 @@ export default function PortfolioWork() {
   return (
     <section id="portfolio" className="work">
       <div className="container">
-        <h2 className="work__title heading__primary">
+        <h2 className="work__title heading__primary" data-scroll>
           <strong>Portfolio</strong>
         </h2>
 
@@ -31,7 +31,7 @@ export default function PortfolioWork() {
 
         {/* <!-- ITEM ZERO --> */}
         <div className="project">
-          <div className="project__image--box">
+          <div className="project__image--box" data-scroll>
             <img
               src={friendConnect}
               alt="Friend Connect"
@@ -141,17 +141,17 @@ export default function PortfolioWork() {
               </a>
             </div>
           </div>
-          <div className="project__image--box">
+          <div className="project__image--box" data-scroll>
             <img src={moviedb} alt="Movie DB" className="project__image" />
           </div>
         </div>
 
         {/* <!-- ITEM TWO --> */}
         <div className="project">
-          <div className="project__image--box">
+          <div className="project__image--box" data-scroll>
             <img src={lyrica} alt="Lyrica App" className="project__image" />
           </div>
-          <div className="project__details--box">
+          <div className="project__details--box data-scroll data-scroll">
             <h2 className="project__details__title">Lyrica lyrics App</h2>
             <h4 className="project__details__title--sub">
               Lyrics finder app with Firebase-Auth, React
@@ -246,7 +246,7 @@ export default function PortfolioWork() {
               </a>
             </div>
           </div>
-          <div className="project__image--box">
+          <div className="project__image--box" data-scroll>
             <img
               src={shopwiseinc}
               alt="ShopWise Inc"
@@ -257,7 +257,7 @@ export default function PortfolioWork() {
 
         {/* <!-- ITEM THREE --> */}
         <div className="project">
-          <div className="project__image--box">
+          <div className="project__image--box" data-scroll>
             <img src={piggame} alt="Pig_game" className="project__image" />
           </div>
           <div className="project__details--box">

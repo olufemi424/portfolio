@@ -8,12 +8,12 @@ export default function Contact() {
   return (
     <section id="contact" className="contact">
       <div className="container">
-        <h2 className="contact__title heading__primary">
+        <h2 className="contact__title heading__primary" data-scroll>
           <strong>Contact</strong>
         </h2>
         <p className="paragraph--center">
-          You can find out more about my personal projects and what i am working
-          in my{" "}
+          You can find out more about my personal projects and what i'm working
+          on in my{" "}
           <Link
             style={{ cursor: "pointer" }}
             className="text-lead"

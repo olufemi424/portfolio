@@ -1,12 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function PageNotFound() {
   return (
     <div>
       <div style={wrapper} className="container">
-        <div style={PageStyle}>
-          <h4 style={h4}>404 Page not found!</h4>
-        </div>
+        <h2 style={h2}>404 Page not found!</h2>
+        <h5 style={h5}>
+          Click to go back to <Link to="/">home</Link>
+        </h5>
       </div>
     </div>
   );
@@ -14,16 +16,17 @@ export default function PageNotFound() {
 
 const wrapper = {
   display: "relative",
-  height: "71vh",
+  height: "83.5vh",
   width: "100vw"
 };
 
-const PageStyle = {
-  // display: "absolute",
-  // top: "100px"
+const h2 = {
+  marginTop: "100px",
+  color: "red",
+  fontSize: "4rem"
 };
 
-const h4 = {
-  display: "absolute",
-  marginTop: "100px"
+const h5 = {
+  fontSize: "2rem",
+  color: "blue"
 };

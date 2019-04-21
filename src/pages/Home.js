@@ -1,5 +1,7 @@
 import React, { Component } from "react";
-//scroll
+//scroll-out
+import ScrollOut from "scroll-out";
+//react-scroll for smooth scrool
 import {
   // Link,
   Element
@@ -16,19 +18,14 @@ import PortfolioWork from "../components/PortfolioWork";
 import Contact from "../components/Contact";
 
 class Home extends Component {
-  // componentDidMount() {
-  //   Events.scrollEvent.register("begin", function(to, element) {
-  //     // console.log("begin", arguments);
-  //   });
-  //   Events.scrollEvent.register("end", function(to, element) {
-  //     // console.log("end", arguments);
-  //   });
-  //   scrollSpy.update();
-  // }
-  // componentWillUnmount() {
-  //   Events.scrollEvent.remove("begin");
-  //   Events.scrollEvent.remove("end");
-  // }
+  componentDidMount() {
+    // scrollout
+    this.so = ScrollOut();
+    console.log("scrool out working");
+  }
+  componentWillUnmount() {
+    this.so.teardown();
+  }
 
   render() {
     return (

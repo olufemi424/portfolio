@@ -5,9 +5,11 @@ export default function About() {
   return (
     <section id="about" className="about">
       <div className="container">
-        <h2 className="about__title heading__primary">About me</h2>
+        <h2 className="about__title heading__primary" data-scroll>
+          About me
+        </h2>
         <div className="about__body">
-          <figure className="portfolio__story">
+          <figure className="portfolio__story" data-scroll>
             <img
               className="portfolio__story__img"
               src={profileImage}
