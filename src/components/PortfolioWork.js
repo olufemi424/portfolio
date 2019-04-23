@@ -154,7 +154,8 @@ export default function PortfolioWork() {
           <div className="project__details--box data-scroll data-scroll">
             <h2 className="project__details__title">Lyrica lyrics App</h2>
             <h4 className="project__details__title--sub">
-              Lyrics finder app with Firebase-Auth, React
+              Lyrics finder app with Firebase-Auth, React. This little project
+              shows firebase login and pulling data from a third API.
             </h4>
 
             <ul className="project__details__list paragraph--small">

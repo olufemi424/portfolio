@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-scroll";
 
 //commons
 import SocialLinks from "../commons/SocialLinks";
@@ -12,20 +11,8 @@ export default function Contact() {
           <strong>Contact</strong>
         </h2>
         <p className="paragraph--center">
-          You can find out more about my personal projects and what i'm working
-          on in my{" "}
-          <Link
-            style={{ cursor: "pointer" }}
-            className="text-lead"
-            to="portfolio"
-            spy={true}
-            smooth={true}
-            duration={500}
-          >
-            portfolio
-          </Link>{" "}
-          . Please do not hesitate to reach out if you would like to discuss
-          your project / job opportunity.
+          Please do not hesitate to reach out if you would like to discuss your
+          project / job opportunity.
         </p>
         <p className="paragraph--center">
           The best way to contact me is via my{" "}

@@ -3,6 +3,7 @@ import React, { Component } from "react";
 // images
 import JavaScript from "../assets/stack/JavaScript-logo.png";
 import Git from "../assets/stack/git.png";
+import Java from "../assets/stack/java.jpg";
 import Html5 from "../assets/stack/html5.png";
 import Jquery from "../assets/stack/jquery.png";
 import Php from "../assets/stack/php.png";
@@ -21,29 +22,35 @@ import firebase from "../assets/stack/firebase.png";
 import python from "../assets/stack/python.jpg";
 import angular from "../assets/stack/angular.png";
 import css from "../assets/stack/css.png";
+import Sql from "../assets/stack/sql.png";
 
 export class TechStack extends Component {
   state = {
     filterStack: [],
     stackArr: [
       {
-        href: JavaScript,
-        name: "JavaScript",
-        category: "frontend"
-      },
-      {
-        href: Git,
-        name: "Git",
-        category: "versioncontrol"
-      },
-      {
         href: Html5,
         name: "Html5",
         category: "frontend"
       },
       {
-        href: Jquery,
-        name: "Jquery",
+        href: css,
+        name: "css",
+        category: "frontend"
+      },
+      {
+        href: Sasspng,
+        name: "sass",
+        category: "frontend"
+      },
+      {
+        href: BootStrappng,
+        name: "BootStrap",
+        category: "frontend"
+      },
+      {
+        href: JavaScript,
+        name: "JavaScript",
         category: "frontend"
       },
       {
@@ -51,15 +58,31 @@ export class TechStack extends Component {
         name: "Php",
         category: "backend"
       },
+
+      {
+        href: Jquery,
+        name: "Jquery",
+        category: "frontend"
+      },
       {
         href: Reactpng,
         name: "React Js",
         category: "frontend"
       },
       {
-        href: firebase,
-        name: "firebase",
-        category: "database"
+        href: angular,
+        name: "angular",
+        category: "frontend"
+      },
+      {
+        href: Java,
+        name: "Java",
+        category: "backend"
+      },
+      {
+        href: python,
+        name: "python",
+        category: "backend"
       },
       {
         href: Node,
@@ -67,15 +90,26 @@ export class TechStack extends Component {
         category: "backend"
       },
       {
+        href: Git,
+        name: "Git",
+        category: "versioncontrol"
+      },
+      {
+        href: firebase,
+        name: "firebase",
+        category: "database"
+      },
+      {
+        href: Sql,
+        name: "SQL",
+        category: "database"
+      },
+      {
         href: mongodb,
         name: "mongodb",
         category: "backend"
       },
-      {
-        href: BootStrappng,
-        name: "BootStrap",
-        category: "frontend"
-      },
+
       {
         href: Googlanalytics,
         name: "GoogleAnalytics",
@@ -88,34 +122,16 @@ export class TechStack extends Component {
       },
       {
         href: Sketchpng,
-        name: "Sketchpng",
+        name: "Sketch",
         category: "frontend"
       },
-      {
-        href: python,
-        name: "python",
-        category: "backend"
-      },
-      {
-        href: angular,
-        name: "angular",
-        category: "frontend"
-      },
-      {
-        href: css,
-        name: "css",
-        category: "frontend"
-      },
+
       {
         href: Vscode,
         name: "Vscode",
         category: "editor"
       },
-      {
-        href: Sasspng,
-        name: "sass",
-        category: "frontend"
-      },
+
       {
         href: Github,
         name: "Github",
@@ -124,7 +140,7 @@ export class TechStack extends Component {
       {
         href: Aspnet,
         name: "Asp.net",
-        category: "frontend"
+        category: "backend"
       }
     ]
   };

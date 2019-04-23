@@ -95,7 +95,7 @@
     }
 
     @media only screen and (max-width: $bp-iphoneX) {
-      padding-top: 6rem;
+      padding-top: 8rem;
     }
 
     &__heading {
@@ -119,8 +119,7 @@
       }
 
       @media only screen and (max-width: $bp-iphoneX) {
-        font-size: 7.5rem;
-        margin-bottom: 3rem;
+        font-size: 6rem;
       }
 
       &--sub {
