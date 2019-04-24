@@ -83,7 +83,7 @@
     padding-top: 8rem;
 
     @media only screen and (max-width: $bp-medium) {
-      padding-top: 6rem;
+      padding-top: 10rem;
     }
 
     @media only screen and (max-width: $bp-small) {
@@ -103,7 +103,7 @@
       color: var(--color-primary);
       font-family: "Crimson Text", serif;
       letter-spacing: 1px;
-      transition: all 0.3s;
+      transition: all 0.2s;
 
       @media only screen and (max-width: $bp-medium) {
         font-size: 11rem;

@@ -63,21 +63,19 @@ export default function PortfolioWork() {
               <li className="project__details__list--item">Mongoose</li>
             </ul>
 
-            <div className="project__button">
+            <a
+              href="https://github.com/olufemi424/friendConnect"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project__button"
+            >
               <img
                 src={githubsvg}
                 alt="github svg"
                 className="project__button__icon"
               />{" "}
-              <a
-                href="https://github.com/olufemi424/friendConnect"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="project__button--link"
-              >
-                Github
-              </a>
-            </div>
+              <span className="project__button--link">Github</span>
+            </a>
           </div>
         </div>
 
@@ -109,37 +107,32 @@ export default function PortfolioWork() {
                 React-Styled-Component
               </li>
             </ul>
-
-            <div className="project__button">
+            <a
+              href="https://github.com/olufemi424/movie-database"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project__button"
+            >
               <img
                 src={githubsvg}
                 alt="github svg"
                 className="project__button__icon"
               />{" "}
-              <a
-                href="https://github.com/olufemi424/movie-database"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="project__button--link"
-              >
-                Github
-              </a>
-            </div>
-            <div className="project__button">
+              <span className="project__button--link">Github</span>
+            </a>
+            <a
+              href="https://olufemi-moviedb.herokuapp.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project__button"
+            >
               <img
                 src={eye}
                 alt="github svg"
                 className="project__button__icon"
               />{" "}
-              <a
-                href="https://olufemi-moviedb.herokuapp.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="project__button--link"
-              >
-                Visit
-              </a>
-            </div>
+              <span className="project__button--link">Visit</span>
+            </a>
           </div>
           <div className="project__image--box" data-scroll>
             <img src={moviedb} alt="Movie DB" className="project__image" />
@@ -172,36 +165,32 @@ export default function PortfolioWork() {
               </li>
             </ul>
 
-            <div className="project__button">
+            <a
+              href="https://github.com/olufemi424/lyricsApp"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project__button"
+            >
               <img
                 src={githubsvg}
                 alt="github svg"
                 className="project__button__icon"
               />{" "}
-              <a
-                href="https://github.com/olufemi424/lyricsApp"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="project__button--link"
-              >
-                Github
-              </a>
-            </div>
-            <div className="project__button">
+              <span className="project__button--link">Github</span>
+            </a>
+            <a
+              href="https://lyricsappfirebaseauth.herokuapp.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project__button"
+            >
               <img
                 src={eye}
                 alt="github svg"
                 className="project__button__icon"
               />{" "}
-              <a
-                href="https://lyricsappfirebaseauth.herokuapp.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="project__button--link"
-              >
-                Visit
-              </a>
-            </div>
+              <span className="project__button--link">Visit</span>
+            </a>
           </div>
         </div>
 
@@ -215,37 +204,32 @@ export default function PortfolioWork() {
               <li className="project__details__list--item">HTML</li>
               <li className="project__details__list--item">Bootstrap</li>
             </ul>
-
-            <div className="project__button">
+            <a
+              href="https://github.com/olufemi424/car-sale-template"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project__button"
+            >
               <img
                 src={githubsvg}
                 alt="github svg"
                 className="project__button__icon"
               />{" "}
-              <a
-                href="https://github.com/olufemi424/car-sale-template"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="project__button--link"
-              >
-                Github
-              </a>
-            </div>
-            <div className="project__button">
+              <span className="project__button--link">Github</span>
+            </a>
+            <a
+              href="https://olufemi424.github.io/car-sale-template/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project__button"
+            >
               <img
                 src={eye}
                 alt="github svg"
                 className="project__button__icon"
               />{" "}
-              <a
-                href="https://olufemi424.github.io/car-sale-template/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="project__button--link"
-              >
-                Visit
-              </a>
-            </div>
+              <span className="project__button--link">Visit</span>
+            </a>
           </div>
           <div className="project__image--box" data-scroll>
             <img
@@ -272,37 +256,32 @@ export default function PortfolioWork() {
               <li className="project__details__list--item">CSS</li>
               <li className="project__details__list--item">Javascript</li>
             </ul>
-
-            <div className="project__button">
+            <a
+              href="https://github.com/olufemi424/dice-game"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project__button"
+            >
               <img
                 src={githubsvg}
                 alt="github svg"
                 className="project__button__icon"
               />{" "}
-              <a
-                href="https://github.com/olufemi424/dice-game"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="project__button--link"
-              >
-                Github
-              </a>
-            </div>
-            <div className="project__button">
+              <span className="project__button--link">Github</span>
+            </a>
+            <a
+              href="https://olufemi424.github.io/dice-game/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project__button"
+            >
               <img
                 src={eye}
                 alt="github svg"
                 className="project__button__icon"
               />{" "}
-              <a
-                href="https://olufemi424.github.io/dice-game/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="project__button--link"
-              >
-                Visit
-              </a>
-            </div>
+              <span className="project__button--link">Visit</span>
+            </a>
           </div>
         </div>
       </div>
