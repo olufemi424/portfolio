@@ -19,11 +19,15 @@ export default function About() {
           </figure>
           <div className="about__paragraph">
             <p className="paragraph">
-              I am a self taught web developer, currently a student at
-              <strong className="text-lead">Saint Xavier University</strong>,
-              working on my MS in
-              <strong className="text-lead">Applied Computer Science</strong>
-              (Graduating December, 2019).
+              I spend every free time i can get uping my game in software
+              development, I have a{" "}
+              <strong className="text-lead">
+                Bachelor of Technology Degree in Computer Science
+              </strong>{" "}
+              and currently wrapping up my{" "}
+              <strong className="text-lead"> MS Degree </strong> in{" "}
+              <strong className="text-lead"> Applied Computer Science</strong>{" "}
+              at Saint Xavier University, Chicago, IL .
             </p>
             <br />
             <p className="paragraph">
@@ -33,9 +37,10 @@ export default function About() {
             </p>
             <br />
             <p className="paragraph">
-              If I'm not working on a computer you can find me relieving stress
-              by cooking, watching soccer highlights or playing video
-              games(soccer), and most importantly spending time with family.
+              If I'm not working on my computer you can find me relieving stress
+              by cooking, watching soccer game or playing video games, and most
+              importantly{" "}
+              <strong className="text-lead">spending time with family.</strong>
             </p>
           </div>
         </div>

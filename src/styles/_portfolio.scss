@@ -93,7 +93,7 @@
 
       &--sub {
         font-weight: 300;
-        color: var(--color-grey-dark-3);
+        color: var(--color-grey-dark-2);
         margin-bottom: 1rem;
       }
     }
@@ -111,11 +111,14 @@
       display: flex;
       flex-wrap: wrap;
       margin-bottom: 1rem;
+      letter-spacing: 0.3px;
+      font-style: italic;
+      font-family: "Times New Roman", Times, serif;
 
       &--item {
         background-color: var(--color-grey-dark-4);
         display: inline;
-        padding: 0.4rem 0.5rem;
+        padding: 0.2rem 0.5rem;
         border-radius: 0.5rem;
         color: var(--color-primary-dark);
         margin: 0 0 1rem 0;
@@ -134,7 +137,7 @@
     border-radius: 5px;
     padding: 0.5rem 1rem;
     text-decoration: none;
-    text-transform: uppercase;
+    text-transform: lowercase;
 
     &:not(:last-child) {
       margin-right: 1rem;

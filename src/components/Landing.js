@@ -1,4 +1,5 @@
 import React from "react";
+import { Link as ScrollLink } from "react-scroll";
 
 //commons
 import SocialLinks from "../commons/SocialLinks";
@@ -9,17 +10,24 @@ export default function Landing() {
       <div className="container">
         <div className="portfolio">
           <div className="portfolio__info">
-            <h1 className="portfolio__info__heading">Hey, I'm Olu.</h1>
+            <h1 className="portfolio__info__heading">
+              Hey, I'm <span className="myName">Olu.</span>
+            </h1>
             <h3 className="portfolio__info__heading--sub portfolio__info__typewriter">
-              <span id="typewriter" /> I'm full stack developer...
+              I'm a full stack software developer...
             </h3>
             <SocialLinks />
             <div className="portfolio__info__cta">
-              <a href="#portfolio" className="portfolio__info__cta__btn">
+              <ScrollLink
+                className="portfolio__info__cta__btn"
+                to="portfolio"
+                spy={true}
+                smooth={true}
+                duration={500}
+              >
                 Portfolio
-              </a>
+              </ScrollLink>
             </div>
-
             <div className="landing__mouse">
               <div className="mouse" />
             </div>

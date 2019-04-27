@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import home from "../assets/SVG/home.svg";
 
-import { Link } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";
 
 class Header extends Component {
   state = {
@@ -47,7 +47,7 @@ class Header extends Component {
 
             <ul className="menu">
               <li className="menu__item">
-                <Link
+                <ScrollLink
                   className="menu__item--link menu__item--link--active"
                   activeClass="active"
                   to="home"
@@ -56,11 +56,11 @@ class Header extends Component {
                   duration={500}
                 >
                   Home
-                </Link>
+                </ScrollLink>
               </li>
 
               <li className="menu__item">
-                <Link
+                <ScrollLink
                   className="menu__item--link menu__item--link"
                   activeClass="active"
                   to="techstack"
@@ -69,11 +69,11 @@ class Header extends Component {
                   duration={500}
                 >
                   Tech
-                </Link>
+                </ScrollLink>
               </li>
 
               <li className="menu__item">
-                <Link
+                <ScrollLink
                   className="menu__item--link menu__item--link"
                   activeClass="active"
                   to="about"
@@ -82,11 +82,11 @@ class Header extends Component {
                   duration={500}
                 >
                   About
-                </Link>
+                </ScrollLink>
               </li>
 
               <li className="menu__item">
-                <Link
+                <ScrollLink
                   className="menu__item--link menu__item--link"
                   activeClass="active"
                   to="portfolio"
@@ -95,11 +95,11 @@ class Header extends Component {
                   duration={500}
                 >
                   Portfolio
-                </Link>
+                </ScrollLink>
               </li>
 
               <li className="menu__item">
-                <Link
+                <ScrollLink
                   className="menu__item--link menu__item--link"
                   activeClass="active"
                   to="contact"
@@ -108,7 +108,7 @@ class Header extends Component {
                   duration={500}
                 >
                   Contact
-                </Link>
+                </ScrollLink>
               </li>
             </ul>
           </div>

@@ -4,7 +4,8 @@
 }
 
 .text-lead {
-  color: var(--color-primary);
+  color: var(--color-secondary);
+  font-style: italic;
 }
 
 .text-lead-sub {
@@ -16,11 +17,13 @@
 .paragraph {
   color: var(--color-grey-light-2);
   font-size: 1.7rem;
-  width: 90%;
   margin: 0 auto;
+  width: 90%;
 
   &--center {
+    max-width: 80rem;
     text-align: center;
+    margin: 0 auto;
   }
 
   &--small {
