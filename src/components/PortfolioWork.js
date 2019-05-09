@@ -5,6 +5,7 @@ import lyrica from "../assets/project-img/lyrica.png";
 import moviedb from "../assets/project-img/moviedb.png";
 import shopwiseinc from "../assets/project-img/shopwiseinc.png";
 import piggame from "../assets/project-img/pig-game.png";
+import twitterLike from "../assets/project-img/twitterLike.png";
 
 //SVG
 import githubsvg from "../assets/SVG/github.svg";
@@ -27,6 +28,68 @@ export default function PortfolioWork() {
             I'm working on. Each of this projects are ideas I have, which I'm
             constantly improving with newly aquired skills.
           </p>
+        </div>
+
+        <div className="project">
+          <div className="project__details--box">
+            <h2 className="project__details__title">twitterLike</h2>
+            <h4 className="project__details__title--sub">
+              MERN Stack Application
+            </h4>
+            <p className="project__details__paragraph">
+              twitterLike is a twitter like clone application. Basic CRUD
+              application with some notifications functionality, built purely
+              with react front end and firebase cloud funtions. And also hosted
+              on firebase.
+            </p>
+
+            <ul className="project__details__list paragraph--small">
+              <li className="project__details__list--item">HTML</li>
+              <li className="project__details__list--item">XML</li>
+              <li className="project__details__list--item">CSS</li>
+              <li className="project__details__list--item">Material UI</li>
+              <li className="project__details__list--item">Javascript</li>
+              <li className="project__details__list--item">React</li>
+              <li className="project__details__list--item">React Redux</li>
+              <li className="project__details__list--item">
+                Firebase - Firestore
+              </li>
+            </ul>
+
+            <a
+              href="https://github.com/olufemi424/socialConnet"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project__button"
+            >
+              <img
+                src={githubsvg}
+                alt="github svg"
+                className="project__button__icon"
+              />{" "}
+              <span className="project__button--link">Github</span>
+            </a>
+            <a
+              href="https://socialconnect-ad8d3.firebaseapp.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project__button"
+            >
+              <img
+                src={eye}
+                alt="github svg"
+                className="project__button__icon"
+              />{" "}
+              <span className="project__button--link">Visit</span>
+            </a>
+          </div>
+          <div className="project__image--box" data-scroll>
+            <img
+              src={twitterLike}
+              alt="twitterLike"
+              className="project__image"
+            />
+          </div>
         </div>
 
         {/* <!-- ITEM ZERO --> */}
