@@ -12,6 +12,25 @@ import githubsvg from "../assets/SVG/github.svg";
 import eye from "../assets/SVG/eye.svg";
 
 export default function PortfolioWork() {
+  const data = [
+    {
+      title: "twitterLike",
+      subTitle: "MERN Stack Application",
+      image: twitterLike,
+      desc:
+        "twitterLike is a twitter like clone application. Basic CRUD application with some notifications functionality, built purely with react front end and firebase cloud funtions. And also hosted on firebase.",
+      tools: [
+        "HTML",
+        "XML",
+        "CSS",
+        "Material UI",
+        "Javascript",
+        "React",
+        "React-Redux",
+        "Firebase - Firestore"
+      ]
+    }
+  ];
   return (
     <section id="portfolio" className="work">
       <div className="container">
@@ -32,28 +51,14 @@ export default function PortfolioWork() {
 
         <div className="project">
           <div className="project__details--box">
-            <h2 className="project__details__title">twitterLike</h2>
-            <h4 className="project__details__title--sub">
-              MERN Stack Application
-            </h4>
-            <p className="project__details__paragraph">
-              twitterLike is a twitter like clone application. Basic CRUD
-              application with some notifications functionality, built purely
-              with react front end and firebase cloud funtions. And also hosted
-              on firebase.
-            </p>
+            <h2 className="project__details__title">{data[0].title}</h2>
+            <h4 className="project__details__title--sub">{data[0].subTitle}</h4>
+            <p className="project__details__paragraph">{data[0].desc}</p>
 
             <ul className="project__details__list paragraph--small">
-              <li className="project__details__list--item">HTML</li>
-              <li className="project__details__list--item">XML</li>
-              <li className="project__details__list--item">CSS</li>
-              <li className="project__details__list--item">Material UI</li>
-              <li className="project__details__list--item">Javascript</li>
-              <li className="project__details__list--item">React</li>
-              <li className="project__details__list--item">React Redux</li>
-              <li className="project__details__list--item">
-                Firebase - Firestore
-              </li>
+              {data[0].tools.map((tool, i) => (
+                <li className="project__details__list--item">{tool}</li>
+              ))}
             </ul>
 
             <a
@@ -85,7 +90,7 @@ export default function PortfolioWork() {
           </div>
           <div className="project__image--box" data-scroll>
             <img
-              src={twitterLike}
+              src={data[0].image}
               alt="twitterLike"
               className="project__image"
             />

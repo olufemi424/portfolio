@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import home from "../assets/SVG/home.svg";
 
 import { Link as ScrollLink } from "react-scroll";
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 
 class Header extends Component {
   state = {
