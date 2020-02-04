@@ -1,157 +1,171 @@
 .work {
-  padding-bottom: 5rem;
-  background-color: var(--color-primary-light);
-  font-size: 1.7rem;
+	padding-bottom: 5rem;
+	background-color: var(--color-primary-light);
+	font-size: 1.7rem;
 
-  &__title {
-    margin-bottom: 3rem;
-    padding-top: 3rem;
-    text-align: center;
-    font-family: "Acme", sans-serif;
-    letter-spacing: 1px;
-  }
+	&__title {
+		margin-bottom: 3rem;
+		padding-top: 3rem;
+		text-align: center;
+		font-family: "Acme", sans-serif;
+		letter-spacing: 1px;
+	}
 
-  &__header {
-    @media only screen and (max-width: $bp-small) {
-      padding: 0 3rem 0 3rem;
-    }
-    &__title--sub {
-      text-align: center;
-      font-size: 2.6rem;
-      font-weight: 400;
-      color: var(--color-grey-dark-2);
-      margin-top: -2rem;
-      margin-bottom: 2rem;
+	&__header {
+		@media only screen and (max-width: $bp-small) {
+			padding: 0 3rem 0 3rem;
+		}
+		&__title--sub {
+			text-align: center;
+			font-size: 2.6rem;
+			font-weight: 400;
+			color: var(--color-grey-dark-2);
+			margin-top: -2rem;
+			margin-bottom: 2rem;
 
-      @media only screen and (max-width: $bp-small) {
-        font-size: 2.3rem;
-      }
-    }
-  }
+			@media only screen and (max-width: $bp-small) {
+				font-size: 2.3rem;
+			}
+		}
+	}
 }
 
 .project {
-  display: flex;
-  width: 100%;
-  justify-content: space-around;
-  margin-top: 5rem;
-  background-color: #eee;
-  padding: 2.5rem;
-  border-radius: 5px;
-  box-shadow: var(--shadow-light);
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+	margin-top: 5rem;
+	background-color: #eee;
+	padding: 2.5rem;
+	border-radius: 5px;
+	box-shadow: var(--shadow-light);
 
-  @media only screen and (max-width: $bp-medium) {
-    padding: 0;
-  }
+	@media only screen and (max-width: $bp-medium) {
+		padding: 0;
+	}
 
-  @media only screen and (max-width: $bp-small) {
-    flex-direction: column;
-    padding: 3rem 0;
-  }
+	@media only screen and (max-width: $bp-small) {
+		flex-direction: column;
+		padding: 3rem 0;
+	}
 
-  &__image--box {
-    flex: 0 0 50%;
-    max-width: 50%;
-    padding: 2rem;
-    perspective: 200rem;
+	&__image--box {
+		flex: 0 0 50%;
+		max-width: 50%;
+		padding: 2rem;
+		perspective: 200rem;
 
-    @media only screen and (max-width: $bp-medium) {
-      padding: 0;
-      margin: auto;
-    }
+		@media only screen and (max-width: $bp-medium) {
+			padding: 0;
+			margin: auto;
+		}
 
-    @media only screen and (max-width: $bp-small) {
-      order: -1;
-      max-width: 90%;
-    }
-  }
+		@media only screen and (max-width: $bp-small) {
+			order: -1;
+			max-width: 90%;
+		}
+	}
 
-  &__image {
-    max-width: 100%;
-    height: auto;
-    transform: scale(1);
-    transition: all 300ms;
+	&__image {
+		max-width: 100%;
+		height: auto;
+		transform: scale(1);
+		transition: all 300ms;
 
-    &:hover {
-      transform: scale(1.05) rotateY(0);
-    }
+		&:hover {
+			transform: scale(1.05) rotateY(0);
+		}
 
-    @media only screen and (max-width: $bp-medium) {
-      padding: 2rem;
-    }
-  }
-  &__details {
-    &--box {
-      @media only screen and (max-width: $bp-medium) {
-        padding: 2rem;
-      }
-    }
+		@media only screen and (max-width: $bp-medium) {
+			padding: 2rem;
+		}
+	}
+	&__details {
+		&--box {
+			@media only screen and (max-width: $bp-medium) {
+				padding: 2rem;
+			}
+		}
 
-    &__title {
-      color: var(--color-primary);
-      margin-bottom: 1.5rem;
-      font-weight: 600;
+		&__title {
+			color: var(--color-primary);
+			margin-bottom: 1.5rem;
+			font-weight: 600;
 
-      &--sub {
-        font-weight: 300;
-        color: var(--color-grey-dark-2);
-        margin-bottom: 1rem;
-      }
-    }
+			@media only screen and (max-width: $bp-medium) {
+				text-align: center;
+			}
 
-    &__paragraph {
-      font-size: 1.5rem;
-      margin-bottom: 1.5rem;
-      color: #151313;
-    }
+			&--sub {
+				font-weight: 300;
+				color: var(--color-grey-dark-2);
+				margin-bottom: 1rem;
 
-    &__list {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: flex;
-      flex-wrap: wrap;
-      margin-bottom: 1rem;
-      letter-spacing: 0.3px;
-      font-style: italic;
-      font-family: "Times New Roman", Times, serif;
+				@media only screen and (max-width: $bp-medium) {
+					text-align: center;
+				}
+			}
+		}
 
-      &--item {
-        background-color: var(--color-grey-dark-4);
-        display: inline;
-        padding: 0.2rem 0.5rem;
-        border-radius: 0.5rem;
-        color: var(--color-primary-dark);
-        margin: 0 0 1rem 0;
+		&__paragraph {
+			font-size: 1.5rem;
+			margin-bottom: 1.5rem;
+			color: #151313;
+		}
 
-        &:not(:last-child) {
-          margin-right: 0.7rem;
-        }
-      }
-    }
-  }
+		&__list {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			display: flex;
+			flex-wrap: wrap;
+			margin-bottom: 1rem;
+			letter-spacing: 0.3px;
+			font-style: italic;
+			font-family: "Times New Roman", Times, serif;
 
-  &__button {
-    background-color: var(--color-primary);
-    display: inline;
-    padding: 0.4rem;
-    border-radius: 5px;
-    padding: 0.5rem 1rem;
-    text-decoration: none;
-    text-transform: lowercase;
+			&--item {
+				background-color: var(--color-grey-dark-4);
+				display: inline;
+				padding: 0.2rem 0.5rem;
+				border-radius: 0.5rem;
+				color: var(--color-primary-dark);
+				margin: 0 0 1rem 0;
 
-    &:not(:last-child) {
-      margin-right: 1rem;
-    }
+				&:not(:last-child) {
+					margin-right: 0.7rem;
+				}
+			}
+		}
+	}
 
-    &__icon {
-      height: 1.5rem;
-      width: 1.5rem;
-      margin-bottom: -0.1rem;
-    }
+	&__actions {
+		@media only screen and (max-width: $bp-medium) {
+			text-align: center;
+		}
+	}
 
-    &--link {
-      color: #000;
-    }
-  }
+	&__button {
+		background-color: var(--color-primary);
+		display: inline;
+		padding: 0.4rem;
+		border-radius: 5px;
+		padding: 0.5rem 1rem;
+		text-decoration: none;
+		text-transform: lowercase;
+
+		&:not(:last-child) {
+			margin-right: 1rem;
+		}
+
+		&__icon {
+			height: 1.5rem;
+			width: 1.5rem;
+			margin-bottom: -0.1rem;
+		}
+
+		&--link {
+			color: #000;
+		}
+	}
 }
