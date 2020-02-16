@@ -2,15 +2,8 @@
 
 .content {
 	font-size: 1.6rem;
-	// padding: 2rem;
-	// margin-top: 7rem;
 	-webkit-font-smoothing: antialiased;
 }
-
-// .shift {
-//   margin-left: 250px;
-//   transition: all 500ms;
-// }
 
 //Portfolio
 .portfolio {
@@ -242,7 +235,8 @@
 }
 
 .landing__mouse {
-	margin: 30% auto;
+	position: relative;
+	margin: 25% auto 0 auto;
 }
 
 .mouse {
