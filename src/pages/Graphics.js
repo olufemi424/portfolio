@@ -33,9 +33,21 @@ export class Graphics extends Component {
 
 		console.log(userData);
 		return (
-			<div style={{ width: "80%", margin: "80px auto" }}>
+			<div
+				style={{
+					width: "80%",
+					margin: "80px auto"
+				}}
+			>
 				{loaded ? (
 					<div>
+						<div
+							style={{
+								height: "80px",
+								backgroundColor: "#02203c",
+								marginTop: "-80px"
+							}}
+						></div>
 						<div style={{ display: "flex", alignContent: "center" }}>
 							<img
 								src={userData.profile_pic_url_hd}
