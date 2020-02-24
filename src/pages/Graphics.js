@@ -11,6 +11,12 @@ export class Graphics extends Component {
 		this.getData();
 	}
 
+	getHasTags = str => {
+		const hashArr = str.split(" ");
+		const filteredHash = hashArr.filter(hash => (hash.match(/#/g) ? hash : ""));
+		console.log(filteredHash);
+	};
+
 	getData = async () => {
 		await axios
 			.get(`https://www.instagram.com/olugfx/?__a=1`)
@@ -32,6 +38,7 @@ export class Graphics extends Component {
 		}
 
 		console.log(userData);
+
 		return (
 			<div
 				style={{
@@ -82,6 +89,9 @@ export class Graphics extends Component {
 									}}
 								>
 									<img
+										name={this.getHasTags(
+											media.node.edge_media_to_caption.edges[0].node.text
+										)}
 										src={media.node.display_url}
 										alt={media.node.full_name}
 										width="300"
