@@ -1,39 +1,38 @@
-import React, { Component } from "react";
+import React, { useState, useEffect } from "react";
 import Pulse from "react-reveal/Pulse";
 import home from "../assets/SVG/home.svg";
 
 import { Link as ScrollLink } from "react-scroll";
 
-class Header extends Component {
-	state = {
-		collapsed: true,
-		animateBurger: false
-	};
+const Header = () => {
+	const [collapsed, setcollapsed] = useState(true);
+	const [animateBurger, setanimateBurger] = useState(false);
+	const [scroll, setscroll] = useState(null);
+	const [top, setTop] = useState(null);
 
-	componentDidMount() {
+	useEffect(() => {
 		const el = document.querySelector("nav");
-		this.setState({ top: el.offsetTop, height: el.offsetHeight });
-		window.addEventListener("scroll", this.handleScroll);
-	}
+		setTop(el.offsetTop);
+		window.addEventListener("scroll", handleScroll);
+	 }, []);
 
-	toggleNav = () => {
-		let collapse = !this.state.collapsed;
-		let animatedBurger = !this.state.animateBurger;
-		this.setState({ collapsed: collapse, animateBurger: animatedBurger });
+
+	function toggleNav () {
+		setanimateBurger(!animateBurger);
+		setcollapsed(!collapsed);
 	};
 
-	handleScroll = () => {
-		this.setState({ scroll: window.scrollY });
+	const handleScroll = () => {
+		setscroll(window.scrollY);
 	};
 
-	render() {
-		const sticky = this.state.scroll > this.state.top ? "fixed-nav" : "";
-		const collapseNav = this.state.collapsed ? "nav" : "nav open";
+	const sticky = scroll > top ? "fixed-nav" : "";
+	const collapseNav = collapsed ? "nav" : "nav open";
 
-		return (
+		return ( 
 			<header className="header">
 				<Pulse>
-					<nav className={`${collapseNav} ${sticky}`}>
+				<nav className={`${collapseNav} ${sticky}`}>
 						<div className="nav__items">
 							<div className="logo">
 								<a href="http://olufemiaf.com/" className="logo__icon">
@@ -109,27 +108,20 @@ class Header extends Component {
 							</ul>
 						</div>
 					</nav>
-					<div className="hamburger" onClick={this.toggleNav}>
-						<span
-							className={
-								this.state.animateBurger ? "first-bar change" : "first-bar"
-							}
+					<div className="hamburger" onClick={toggleNav}>
+					<span
+							className={animateBurger ? "first-bar change" : "first-bar" }
 						/>{" "}
 						<span
-							className={
-								this.state.animateBurger ? "second-bar change" : "second-bar"
-							}
+							className={ animateBurger ? "second-bar change" : "second-bar" }
 						/>
 						<span
-							className={
-								this.state.animateBurger ? "third-bar change" : "third-bar"
-							}
+							className={ animateBurger ? "third-bar change" : "third-bar" }
 						/>
 					</div>
 				</Pulse>
 			</header>
 		);
-	}
 }
 
 export default Header;
