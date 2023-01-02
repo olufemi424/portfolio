@@ -137,6 +137,21 @@
 				}
 			}
 		}
+
+		&-more{
+			color: #151313;
+			margin-block-end: 2rem;
+			font-size: 1.5rem;
+
+			&__header { }
+
+			&__list {
+				list-style: circle;
+                padding: 0;
+				margin-inline-start: 2.5rem;
+				margin-block-end: 2rem;
+			}
+		}
 	}
 
 	&__actions {

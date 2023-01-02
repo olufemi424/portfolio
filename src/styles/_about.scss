@@ -88,7 +88,7 @@
     transition: all 0.5s ease;
 
     &:hover {
-      transform: rotateY(180deg);
+      // transform: rotateY(180deg);
     }
   }
 
@@ -127,6 +127,7 @@
     box-shadow: 2px 3px #00000062;
     border-radius: 3px;
     transition: all 300ms;
+    object-fit: contain;
 
     @media only screen and (max-width: $bp-iphoneX) {
       height: 6rem;
