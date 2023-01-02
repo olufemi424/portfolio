@@ -108,7 +108,7 @@ export default function PortfolioWork() {
 								The client pages are as follows:
 							</h4>
 							<ul className="project__details-more__list">
-								<li><code>/overview</code>: View a monthly calendar, with some analysis of performance for the month</li>
+								<li><code>/overview</code>: View a monthly calendar, with some analysis of performance for the month such as, average win rate, average lossing rate, win to loss ratio, all time max loss, all time max win</li>
 								<li><code>/daily-journal</code>: View the current trading day, also accepts a param to view a particular day from the past where some trades are placed</li>
 								<li><code>/trades</code>: View all trades, Also allows for sorting, i.e winning trades, losing trading, date range </li>
 								<li><code>/setups</code>: View all Setups, Also suggesting the last 5 winning trades, to give the trade more context on what has been working lately </li>
