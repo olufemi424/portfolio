@@ -92,7 +92,7 @@ export default function PortfolioWork() {
 						<h2 className="project__details__title">Niniwise</h2>
 						<h4 className="project__details__title--sub">Full Stack Application</h4>
 						<p className="project__details__paragraph">
-							I am currently working on a full stack application, a trading journal, with node backend and a vue frontend. The idea of this project is to be able to help new trades to identify their behavior patterns in the financial market, giving them the ability to map what is working for them and what is not. A platform that will provide an intense engagement with their trading behavior to help them become a better trader and be profitable in the long term.
+							I am currently working on a full stack application, a trading journal, with node backend and a vue frontend. The idea of this project is to be able to help new trader identify their behavior patterns in the financial market, giving them the ability to map what is working for them and what is not. A platform that will provide an intense engagement with their trading behavior to help them become a better trader and be profitable in the long term.
 						</p>
 
 						<div className="project__details-more">
