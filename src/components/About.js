@@ -19,7 +19,7 @@ export default function About() {
 					</figure>
 					<div className="about__paragraph">
 						<p className="paragraph">
-							A full stack developer with an eye for creative design, UI/UX
+							A full stack web developer with an eye for creative design, UI/UX
 							development and a strong desire to learn and explore.
 							<strong className="text-lead">
 								{" "}

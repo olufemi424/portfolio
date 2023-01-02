@@ -33,6 +33,9 @@ class Home extends Component {
 				</Element>
 
 				<Element name="techstack">
+					<div className="card">
+						Card text
+					</div>
 					<TechStack />
 				</Element>
 
