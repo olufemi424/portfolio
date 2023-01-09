@@ -3,9 +3,31 @@ import friendConnect from "./project-img/friendconnet.png";
 import lyrica from "./project-img/lyrica.png";
 import moviedb from "./project-img/moviedb.png";
 import twitterLike from "./project-img/twitterLike.png";
+import pokemon from "./project-img/pokemon.png";
 
 
 const datas = [
+	{
+		title: "Pokemon API Fed Challenge, IBM",
+		subTitle: "Front-End UI Design and API consumption",
+		image: pokemon,
+		icons: {
+         github: '',
+         link: ''
+      },
+      githubLink:"https://github.com/olufemi424/senior-fed-challenge",
+      liveHostLink:"https://kaleidoscopic-truffle-37070f.netlify.app",
+		desc:
+			"This project is an IBM Front-End UI design and API consumption challenge. I was able to work with the provided Endpoint and create a beautiful UI design. The features include: List of pokemon (Grid and List View) with pagination, Search by Name, filter by type, Favorite and Unfavorite a particular pokemon, view the list of favorite pokemon and view the details of a particular pokemon with corresponding Evolutions. It was a fun project and i learned using TypeScript with Vue, which is a modern front-end frame work",
+		tools: [
+			"HTML",
+			"CSS",
+			"JavaScript",
+			"Vue",
+			"TypeScript",
+			"IBM Pokemon API"
+		]
+	},
 	{
 		title: "twitterLike",
 		subTitle: "MERN Stack Application",
