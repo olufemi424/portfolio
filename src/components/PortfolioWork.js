@@ -2,6 +2,7 @@ import React from "react";
 import datas from "../assets/data.js";
 import niniwise1 from "../assets/project-img/niniwise-1.png";
 import niniwise2 from "../assets/project-img/niniwise-2.png";
+import niniwise3 from "../assets/project-img/niniwise-promo.png";
 
 //SVG
 import githubsvg from "../assets/SVG/github.svg";
@@ -89,13 +90,13 @@ export default function PortfolioWork() {
 
 				<div className="project">
 					<div className="project__details--box">
-						<h2 className="project__details__title">Niniwise</h2>
+						<h2 className="project__details__title">Niniwise.com</h2>
 						<h4 className="project__details__title--sub">Full Stack Application</h4>
 						<p className="project__details__paragraph">
 							I am currently working on a full stack application, a trading journal, with node backend and a vue frontend. The idea of this project is to be able to help new trader identify their behavior patterns in the financial market, giving them the ability to map what is working for them and what is not. A platform that will provide an intense engagement with their trading behavior to help them become a better trader and be profitable in the long term.
 						</p>
 						<p className="project__details__paragraph">
-							For now, this app doesnt support any integration with an brokerage platform. All trades are created manually. Also, i plan on integrating live chart of instruments traded.
+							For now, this app doesnt support any integration with any brokerage/trading platform. All trades are created manually. Also, i plan on integrating live chart of instruments traded. This app is still in development phase and only few users are allowed at the moment.
 						</p>
 
 						<div className="project__details-more">
@@ -131,23 +132,46 @@ export default function PortfolioWork() {
 								Javascript
 							</li>
 							<li className="project__details__list--item">
-								Vue
+								Vue (VueSSR, Vuex)
+							</li>
+							<li className="project__details__list--item">
+								React (hooks, redux)
 							</li>
 							<li className="project__details__list--item">
 								Node
 							</li>
 							<li className="project__details__list--item">
+								Express
+							</li>
+							<li className="project__details__list--item">
+								Jwt
+							</li>
+							<li className="project__details__list--item">
 								Bash Scripting
+							</li>
+							<li className="project__details__list--item">
+								mongoDB (Atlas)
 							</li>
 						</ul>
 
 						<div className="project__actions">
-							<a href="#portfolio" className="project__button">
-								<span className="project__button--link">Private Git Repository</span>
+							<a
+								href="http://www.niniwise.com"
+								target="_blank"
+								rel="noopener noreferrer"
+								className="project__button"
+							>
+								<img
+									src={eye}
+									alt="github svg"
+									className="project__button__icon"
+								/>{" "}
+								<span className="project__button--link">Visit</span>
 							</a>
 						</div>
 					</div>
 					<div className="project__image--box" data-scroll>
+						<img src={niniwise3} alt="Niniwise trading journal" className="project__image" />
 						<img src={niniwise2} alt="Niniwise trading journal" className="project__image" />
 						<img src={niniwise1} alt="Niniwise trading journal" className="project__image" />
 					</div>
