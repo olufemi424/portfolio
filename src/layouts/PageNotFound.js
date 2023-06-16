@@ -17,16 +17,16 @@ export default function PageNotFound() {
 const wrapper = {
   display: "relative",
   height: "83.5vh",
-  width: "100vw"
+  width: "100vw",
 };
 
 const h2 = {
   marginTop: "100px",
   color: "red",
-  fontSize: "4rem"
+  fontSize: "4rem",
 };
 
 const h5 = {
   fontSize: "2rem",
-  color: "blue"
+  color: "blue",
 };
