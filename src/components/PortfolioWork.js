@@ -91,7 +91,7 @@ export default function PortfolioWork() {
         <div className="project">
           <div className="project__details--box">
             <a
-              href="https://transcendent-sopapillas-69d9e1.netlify.app/"
+              href="https://transcendent-sopapillas-69d9e1.netlify.app"
               target="_blank"
               rel="noopener noreferrer"
               className="project__details__title"
