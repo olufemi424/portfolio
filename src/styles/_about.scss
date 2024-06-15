@@ -28,22 +28,16 @@
     }
   }
 
-  background-image: linear-gradient(
-      122deg,
-      rgba(245, 33, 33, 0) 82%,
-      rgba(255, 255, 255, 0.08) 15%
-    ),
-    linear-gradient(
-      108deg,
-      rgba(27, 0, 255, 0) 80%,
-      rgba(255, 255, 255, 0.08) 15%
-    ),
-    linear-gradient(
-      101deg,
-      rgba(255, 33, 33, 0) 79%,
-      rgba(255, 255, 255, 0.08) 15%
-    ),
-    radial-gradient(circle, rgb(2, 32, 60) 0%, rgb(2, 32, 60) 100%);
+  background-image: linear-gradient(122deg,
+    rgba(245, 33, 33, 0) 82%,
+    rgba(255, 255, 255, 0.08) 15%),
+  linear-gradient(108deg,
+    rgba(27, 0, 255, 0) 80%,
+    rgba(255, 255, 255, 0.08) 15%),
+  linear-gradient(101deg,
+    rgba(255, 33, 33, 0) 79%,
+    rgba(255, 255, 255, 0.08) 15%),
+  radial-gradient(circle, rgb(2, 32, 60) 0%, rgb(2, 32, 60) 100%);
 }
 
 .stack {
@@ -168,21 +162,15 @@
   margin-top: 10rem;
   border-radius: 0.5rem;
   padding: 3rem 0 10rem 0;
-  background-image: linear-gradient(
-      -122deg,
+  background-image: linear-gradient(-122deg,
       rgba(245, 33, 33, 0) 82%,
-      rgba(255, 255, 255, 0.08) 15%
-    ),
-    linear-gradient(
-      -108deg,
+      rgba(255, 255, 255, 0.08) 15%),
+    linear-gradient(-108deg,
       rgba(27, 0, 255, 0) 80%,
-      rgba(255, 255, 255, 0.08) 15%
-    ),
-    linear-gradient(
-      -101deg,
+      rgba(255, 255, 255, 0.08) 15%),
+    linear-gradient(-101deg,
       rgba(255, 33, 33, 0) 79%,
-      rgba(255, 255, 255, 0.08) 15%
-    ),
+      rgba(255, 255, 255, 0.08) 15%),
     radial-gradient(circle, rgb(2, 32, 60) 0%, rgb(2, 32, 60) 100%);
 
   @media only screen and (max-width: $bp-medium) {
@@ -203,12 +191,10 @@
   justify-content: space-around;
   align-items: center;
   height: 6rem;
-  background-image: radial-gradient(
-    circle,
-    rgb(20, 71, 120) 0%,
-    rgb(2, 32, 60) 90%,
-    rgb(2, 32, 60) 100%
-  );
+  background-image: radial-gradient(circle,
+      rgb(20, 71, 120) 0%,
+      rgb(2, 32, 60) 90%,
+      rgb(2, 32, 60) 100%);
 
   &__button {
     display: flex;

@@ -11,41 +11,41 @@ import PortfolioWork from "../components/PortfolioWork";
 import Contact from "../components/Contact";
 
 class Home extends Component {
-	componentDidMount() {
-		// scrollout
-		this.so = ScrollOut();
+  componentDidMount() {
+    // scrollout
+    this.so = ScrollOut();
 
-		setTimeout(() => {}, 300);
-	}
-	componentWillUnmount() {
-		this.so.teardown();
-	}
+    setTimeout(() => {}, 300);
+  }
+  componentWillUnmount() {
+    this.so.teardown();
+  }
 
-	render() {
-		return (
-			<main className="content">
-				<Element name="home">
-					<Landing />
-				</Element>
+  render() {
+    return (
+      <main className="content">
+        <Element name="home">
+          <Landing />
+        </Element>
 
-				<Element name="about">
-					<About />
-				</Element>
+        <Element name="about">
+          <About />
+        </Element>
 
-				<Element name="techstack">
-					<TechStack />
-				</Element>
+        <Element name="techstack">
+          <TechStack />
+        </Element>
 
-				<Element name="portfolio">
-					<PortfolioWork />
-				</Element>
+        <Element name="portfolio">
+          <PortfolioWork />
+        </Element>
 
-				<Element name="contact">
-					<Contact />
-				</Element>
-			</main>
-		);
-	}
+        <Element name="contact">
+          <Contact />
+        </Element>
+      </main>
+    );
+  }
 }
 
 export default Home;
