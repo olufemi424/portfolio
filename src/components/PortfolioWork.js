@@ -90,7 +90,14 @@ export default function PortfolioWork() {
 
         <div className="project">
           <div className="project__details--box">
-            <h2 className="project__details__title">Niniwise.com</h2>
+            <a
+              href="https://transcendent-sopapillas-69d9e1.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project__details__title"
+            >
+              Niniwise.com
+            </a>
             <h4 className="project__details__title--sub">
               Full Stack Application
             </h4>
@@ -179,7 +186,7 @@ export default function PortfolioWork() {
 
             <div className="project__actions">
               <a
-                href="http://www.niniwise.com"
+                href="https://transcendent-sopapillas-69d9e1.netlify.app/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="project__button"
