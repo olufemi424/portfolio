@@ -31,118 +31,118 @@ export class TechStack extends Component {
       {
         href: Html5,
         name: "Html5",
-        category: "frontend"
+        category: "frontend",
       },
       {
         href: css,
         name: "css",
-        category: "frontend"
+        category: "frontend",
       },
       {
         href: Sasspng,
         name: "sass",
-        category: "frontend"
+        category: "frontend",
       },
       {
         href: BootStrappng,
         name: "BootStrap",
-        category: "frontend"
+        category: "frontend",
       },
       {
         href: JavaScript,
         name: "JavaScript",
-        category: "frontend"
+        category: "frontend",
       },
       {
         href: Php,
         name: "Php",
-        category: "backend"
+        category: "backend",
       },
 
       {
         href: Jquery,
         name: "Jquery",
-        category: "frontend"
+        category: "frontend",
       },
       {
         href: Reactpng,
         name: "React Js",
-        category: "frontend"
+        category: "frontend",
       },
       {
         href: angular,
         name: "angular",
-        category: "frontend"
+        category: "frontend",
       },
       {
         href: Java,
         name: "Java",
-        category: "backend"
+        category: "backend",
       },
       {
         href: python,
         name: "python",
-        category: "backend"
+        category: "backend",
       },
       {
         href: Node,
         name: " Node JS",
-        category: "backend"
+        category: "backend",
       },
       {
         href: Git,
         name: "Git",
-        category: "versioncontrol"
+        category: "versioncontrol",
       },
       {
         href: firebase,
         name: "firebase",
-        category: "database"
+        category: "database",
       },
       {
         href: Sql,
         name: "SQL",
-        category: "database"
+        category: "database",
       },
       {
         href: mongodb,
         name: "mongodb",
-        category: "backend"
+        category: "backend",
       },
 
       {
         href: Googlanalytics,
         name: "GoogleAnalytics",
-        category: "backend"
+        category: "backend",
       },
       {
         href: Photoshop,
         name: "Photoshop",
-        category: "frontend"
+        category: "frontend",
       },
       {
         href: Sketchpng,
         name: "Sketch",
-        category: "frontend"
+        category: "frontend",
       },
 
       {
         href: Vscode,
         name: "Vscode",
-        category: "editor"
+        category: "editor",
       },
 
       {
         href: Github,
         name: "Github",
-        category: "versioncontrol"
+        category: "versioncontrol",
       },
       {
         href: Aspnet,
         name: "Asp.net",
-        category: "backend"
-      }
-    ]
+        category: "backend",
+      },
+    ],
   };
 
   componentDidMount() {
@@ -153,10 +153,10 @@ export class TechStack extends Component {
   filterBackEnd = () => {
     const stateStackArr = [...this.state.stackArr];
     const newStackArr = stateStackArr.filter(
-      stack => stack.category === "backend"
+      (stack) => stack.category === "backend"
     );
     this.setState({
-      filterStack: newStackArr
+      filterStack: newStackArr,
     });
   };
 
@@ -164,23 +164,23 @@ export class TechStack extends Component {
   filterFrontEnd = () => {
     const stateStackArr = [...this.state.stackArr];
     const newStackArr = stateStackArr.filter(
-      stack => stack.category === "frontend"
+      (stack) => stack.category === "frontend"
     );
     this.setState({
-      filterStack: newStackArr
+      filterStack: newStackArr,
     });
   };
 
   //filter all image
   filterAll = () => {
     this.setState({
-      filterStack: this.state.stackArr
+      filterStack: this.state.stackArr,
     });
   };
 
   render() {
     const stateStack = [...this.state.filterStack];
-    const newstateStack = stateStack.map(image => {
+    const newstateStack = stateStack.map((image) => {
       const { name, href } = image;
       return (
         <div className="stack__main-card" key={href}>
